@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Text?>
+<?import java.lang.*?><?import java.util.*?><?import javafx.scene.*?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.ChatStudentCont">
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+    fx:controller="ulearn.controllers.ClassTeacherCont" prefHeight="400.0" prefWidth="600.0">
   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
-              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <TabPane prefHeight="370.8" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0"
-             AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <Tab text="Home">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
       </Tab>
       <Tab text="Resources">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
           <Accordion AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-                     AnchorPane.topAnchor="0.0">
+              AnchorPane.topAnchor="0.0">
             <panes>
               <TitledPane animated="false" text="Files">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <ScrollPane prefHeight="265.6" prefWidth="598.0" AnchorPane.bottomAnchor="0.0"
-                              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0"/>
                   </ScrollPane>
                 </AnchorPane>
@@ -37,7 +28,7 @@
               <TitledPane animated="false" text="Links">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <ScrollPane prefHeight="265.6" prefWidth="598.0" AnchorPane.bottomAnchor="0.0"
-                              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0"/>
                   </ScrollPane>
                 </AnchorPane>
@@ -45,7 +36,7 @@
               <TitledPane animated="false" text="Documents">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <ScrollPane prefHeight="265.6" prefWidth="598.0" AnchorPane.bottomAnchor="0.0"
-                              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0"/>
                   </ScrollPane>
                 </AnchorPane>
@@ -57,12 +48,12 @@
       <Tab text="Assignments">
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
           <Accordion prefHeight="341.6" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
-                     AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <panes>
               <TitledPane animated="false" text="HW1">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <ScrollPane prefHeight="265.6" prefWidth="598.0" AnchorPane.bottomAnchor="0.0"
-                              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <GridPane prefHeight="136.0" prefWidth="578.0">
                       <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -75,9 +66,9 @@
                       </rowConstraints>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due: SomeDate"/>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Information: You must do the assignment"
-                            GridPane.rowIndex="1"/>
+                          GridPane.rowIndex="1"/>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0"
-                            text="Grading Criteria: You will be marked down for doing poorly." GridPane.rowIndex="2"/>
+                          text="Grading Criteria: You will be marked down for doing poorly." GridPane.rowIndex="2"/>
                       <Button mnemonicParsing="false" text="Submit" GridPane.rowIndex="3"/>
                     </GridPane>
                   </ScrollPane>
@@ -86,7 +77,7 @@
               <TitledPane animated="false" text="HW2">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <ScrollPane prefHeight="265.6" prefWidth="598.0" AnchorPane.bottomAnchor="0.0"
-                              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <GridPane prefHeight="136.0" prefWidth="578.0">
                       <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -99,10 +90,9 @@
                       </rowConstraints>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due: SomeDate"/>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Information: You must do the assignment"
-                            GridPane.rowIndex="1"/>
+                          GridPane.rowIndex="1"/>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0"
-                            text="Grading Criteria: You will be marked down for doing poorly."
-                            GridPane.rowIndex="2"/>
+                          text="Grading Criteria: You will be marked down for doing poorly." GridPane.rowIndex="2"/>
                       <Button mnemonicParsing="false" text="Submit" GridPane.rowIndex="3"/>
                     </GridPane>
                   </ScrollPane>
@@ -111,7 +101,7 @@
               <TitledPane animated="false" text="HW3">
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                   <ScrollPane prefHeight="265.6" prefWidth="598.0" AnchorPane.bottomAnchor="0.0"
-                              AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <GridPane prefHeight="136.0" prefWidth="578.0">
                       <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -124,10 +114,9 @@
                       </rowConstraints>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Due: SomeDate"/>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Information: You must do the assignment"
-                            GridPane.rowIndex="1"/>
+                          GridPane.rowIndex="1"/>
                       <Text strokeType="OUTSIDE" strokeWidth="0.0"
-                            text="Grading Criteria: You will be marked down for doing poorly."
-                            GridPane.rowIndex="2"/>
+                          text="Grading Criteria: You will be marked down for doing poorly." GridPane.rowIndex="2"/>
                       <Button mnemonicParsing="false" text="Submit" GridPane.rowIndex="3"/>
                     </GridPane>
                   </ScrollPane>
