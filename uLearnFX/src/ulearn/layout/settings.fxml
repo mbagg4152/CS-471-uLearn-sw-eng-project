@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ulearn.controllers.SettingsCont"
+            prefHeight="400.0" prefWidth="600.0">
+  <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+              AnchorPane.topAnchor="0.0" maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0"
+              prefHeight="180.0"
+              prefWidth="200.0">
+    <VBox layoutX="7.0" layoutY="7.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="80.0"
+          prefWidth="600.0" AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <MenuButton mnemonicParsing="false" prefWidth="140.0" text="I am a(n)...">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Elementary Student"/>
+          <MenuItem mnemonicParsing="false" text="Middle School Student"/>
+          <MenuItem mnemonicParsing="false" text="High School Student"/>
+          <MenuItem mnemonicParsing="false" text="Educator"/>
+          <MenuItem mnemonicParsing="false" text="Educational Administrator"/>
+        </items>
+        <VBox.margin>
+          <Insets bottom="10.0" left="40.0" right="40.0" top="10.0"/>
+        </VBox.margin>
+      </MenuButton>
+    </VBox>
+  </AnchorPane>
+</AnchorPane>
