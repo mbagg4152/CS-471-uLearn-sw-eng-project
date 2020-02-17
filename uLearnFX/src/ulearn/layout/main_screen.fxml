@@ -8,52 +8,60 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainCont">
-  <MenuBar layoutY="2.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="25.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainCont">
+  <MenuBar layoutY="2.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="25.0" prefWidth="600.0"
+           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+           AnchorPane.topAnchor="0.0">
     <Menu mnemonicParsing="false" text="Menu">
-      <MenuItem mnemonicParsing="false" text="Close" />
+      <MenuItem mnemonicParsing="false" text="Close"/>
     </Menu>
     <Menu mnemonicParsing="false" text="Help">
-      <MenuItem mnemonicParsing="false" text="About uLearn" />
+      <MenuItem mnemonicParsing="false" text="About uLearn"/>
     </Menu>
   </MenuBar>
-  <TabPane fx:id="mainTabs" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+  <TabPane fx:id="mainTabs" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0" prefWidth="600.0"
+           tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
     <Tab fx:id="homeTab" closable="false" text="uLearn Home">
-      <fx:include source="home.fxml" />
+      <fx:include source="home.fxml"/>
     </Tab>
-    <Tab fx:id="classStudentTab" closable="false" text="Classes (SV)">
-      <fx:include source="class_student.fxml" />
+    <Tab fx:id="classStudentTab" closable="false" text="Classes [Student]">
+      <fx:include source="class_student.fxml"/>
     </Tab>
-    <Tab fx:id="classTeacherTab" closable="false" text="Classes (TV)">
-      <fx:include source="class_teacher.fxml" />
+    <Tab fx:id="classTeacherTab" closable="false" text="Classes [Educator]">
+      <fx:include source="class_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="gradeStudentTab" closable="false" text="Grades (SV)">
-      <fx:include source="grades_student.fxml" />
+    <Tab fx:id="gradeStudentTab" closable="false" text="Grades [Student]">
+      <fx:include source="grades_student.fxml"/>
     </Tab>
-    <Tab fx:id="gradeTeacherTab" closable="false" text="Grades (TV)">
-      <fx:include source="grades_teacher.fxml" />
+    <Tab fx:id="gradeTeacherTab" closable="false" text="Grades [Educator]">
+      <fx:include source="grades_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabStudent" closable="false" text="Chat (SV)">
-      <fx:include source="chat_student.fxml" />
+    <Tab fx:id="chatTabStudent" closable="false" text="Chat [Student]">
+      <fx:include source="chat_student.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabTeacher" closable="false" text="Chat (TV)">
-      <fx:include source="chat_teacher.fxml" />
+    <Tab fx:id="chatTabTeacher" closable="false" text="Chat [Educator]">
+      <fx:include source="chat_teacher.fxml"/>
     </Tab>
     <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">
-      <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <WebView fx:id="wvGCal" prefHeight="342.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+                  prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <WebView fx:id="wvGCal" prefHeight="342.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0"
+                 AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
       </AnchorPane>
     </Tab>
     <Tab fx:id="storageTab" closable="false" onSelectionChanged="#tabEvents" text="Storage">
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <WebView fx:id="wvDrive" layoutX="151.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0"
+                  AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <WebView fx:id="wvDrive" layoutX="151.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0"
+                 AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                 AnchorPane.topAnchor="0.0"/>
       </AnchorPane>
     </Tab>
-    <Tab fx:id="toolTab" closable="false" text="Tools">
-      <fx:include source="tools.fxml" />
-    </Tab>
     <Tab fx:id="settingsTab" closable="false" text="Settings">
-      <fx:include source="settings.fxml" />
+      <fx:include source="settings.fxml"/>
     </Tab>
   </TabPane>
 </AnchorPane>
