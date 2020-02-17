@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainCont">
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.ChatStudentCont">
   <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="400.0"
               prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
               AnchorPane.topAnchor="0.0">
@@ -17,199 +17,19 @@
              AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
              AnchorPane.topAnchor="0.0">
       <Tab text="Class One">
-        <AnchorPane prefHeight="411.0" prefWidth="663.0">
-          <children>
-            <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
-              <children>
-                <ScrollPane prefHeight="251.0" prefWidth="374.0">
-                  <content>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
-                  </content>
-                </ScrollPane>
-                <Button fx:id="chatsvhomesubmit" layoutX="293.0" layoutY="251.0" mnemonicParsing="false"
-                        prefHeight="62.0" prefWidth="81.0" text="Send"/>
-                <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
-              </children>
-            </Pane>
-            <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <Pane prefHeight="528.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
-                    <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
-                  </children>
-                </Pane>
-              </content>
-            </ScrollPane>
-            <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
-                    <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
-                    <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
-                  </children>
-                </AnchorPane>
-              </content>
-            </ScrollPane>
-          </children>
-        </AnchorPane>
+        <fx:include source="chatpage_student.fxml"/>
       </Tab>
       <Tab text="Class Two">
-        <AnchorPane prefHeight="411.0" prefWidth="663.0">
-          <children>
-            <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
-              <children>
-                <ScrollPane prefHeight="251.0" prefWidth="374.0">
-                  <content>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
-                  </content>
-                </ScrollPane>
-                <Button fx:id="chatsvhomesubmit1" layoutX="293.0" layoutY="251.0" mnemonicParsing="false"
-                        prefHeight="62.0" prefWidth="81.0" text="Send"/>
-                <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
-              </children>
-            </Pane>
-            <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <Pane prefHeight="528.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
-                    <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
-                  </children>
-                </Pane>
-              </content>
-            </ScrollPane>
-            <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
-                    <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
-                    <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
-                  </children>
-                </AnchorPane>
-              </content>
-            </ScrollPane>
-          </children>
-        </AnchorPane>
+        <fx:include source="chatpage_student.fxml"/>
       </Tab>
       <Tab text="Class Three">
-        <AnchorPane prefHeight="411.0" prefWidth="663.0">
-          <children>
-            <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
-              <children>
-                <ScrollPane prefHeight="251.0" prefWidth="374.0">
-                  <content>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
-                  </content>
-                </ScrollPane>
-                <Button fx:id="chatsvhomesubmit2" layoutX="293.0" layoutY="251.0" mnemonicParsing="false"
-                        prefHeight="62.0" prefWidth="81.0" text="Send"/>
-                <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
-              </children>
-            </Pane>
-            <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <Pane prefHeight="528.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
-                    <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
-                  </children>
-                </Pane>
-              </content>
-            </ScrollPane>
-            <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
-                    <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
-                    <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
-                  </children>
-                </AnchorPane>
-              </content>
-            </ScrollPane>
-          </children>
-        </AnchorPane>
+        <fx:include source="chatpage_student.fxml"/>
       </Tab>
       <Tab text="Class Four">
-        <AnchorPane prefHeight="411.0" prefWidth="663.0">
-          <children>
-            <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
-              <children>
-                <ScrollPane prefHeight="251.0" prefWidth="374.0">
-                  <content>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
-                  </content>
-                </ScrollPane>
-                <Button fx:id="chatsvhomesubmit3" layoutX="293.0" layoutY="251.0" mnemonicParsing="false"
-                        prefHeight="62.0" prefWidth="81.0" text="Send"/>
-                <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
-              </children>
-            </Pane>
-            <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <Pane prefHeight="528.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
-                    <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
-                  </children>
-                </Pane>
-              </content>
-            </ScrollPane>
-            <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
-                    <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
-                    <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
-                  </children>
-                </AnchorPane>
-              </content>
-            </ScrollPane>
-          </children>
-        </AnchorPane>
+        <fx:include source="chatpage_student.fxml"/>
       </Tab>
       <Tab text="Direct Message">
-        <AnchorPane prefHeight="411.0" prefWidth="663.0">
-          <children>
-            <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
-              <children>
-                <ScrollPane prefHeight="251.0" prefWidth="374.0">
-                  <content>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
-                  </content>
-                </ScrollPane>
-                <Button fx:id="chatsvhomesubmit4" layoutX="293.0" layoutY="251.0" mnemonicParsing="false"
-                        prefHeight="62.0" prefWidth="81.0" text="Send"/>
-                <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
-              </children>
-            </Pane>
-            <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <Pane prefHeight="528.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
-                    <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
-                  </children>
-                </Pane>
-              </content>
-            </ScrollPane>
-            <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
-                  <children>
-                    <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
-                    <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
-                    <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
-                  </children>
-                </AnchorPane>
-              </content>
-            </ScrollPane>
-          </children>
-        </AnchorPane>
+        <fx:include source="chatpage_student.fxml"/>
       </Tab>
     </TabPane>
   </AnchorPane>
