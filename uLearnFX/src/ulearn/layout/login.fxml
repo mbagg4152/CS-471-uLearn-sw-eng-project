@@ -25,15 +25,15 @@
       <Font name="Corbel" size="14.0"/>
     </font>
   </TextField>
+  <PasswordField fx:id="pwdBox" layoutX="104.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT">
+    <font>
+      <Font name="Corbel" size="14.0"/>
+    </font>
+  </PasswordField>
   <Button fx:id="loginBtn" layoutX="152.0" layoutY="211.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT"
           onAction="#loginBtnAction" text="Sign In">
     <font>
       <Font name="Corbel" size="14.0"/>
     </font>
   </Button>
-  <PasswordField fx:id="pwdBox" layoutX="104.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT">
-    <font>
-      <Font name="Corbel" size="14.0"/>
-    </font>
-  </PasswordField>
 </Pane>
