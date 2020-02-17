@@ -2,6 +2,8 @@ package ulearn.controllers;
 
 import javafx.event.Event;
 import javafx.fxml.FXML;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.web.WebEngine;
@@ -9,13 +11,25 @@ import javafx.scene.web.WebView;
 
 public class MainCont {
     // main tabs
-    public TabPane mainTabs;
+    public TabPane mainTabs = new TabPane();
     public Tab chatTabStudent = new Tab(), classStudentTab = new Tab(), calTab = new Tab(), storageTab = new Tab(),
-            settingsTab = new Tab(), classTeacherTab = new Tab(), chatTabTeacher = new Tab();
-
+            settingsTab = new Tab(), classTeacherTab = new Tab(), chatTabTeacher = new Tab(), homeTab = new Tab(),
+            gradeStudentTab = new Tab(), gradeTeacherTab = new Tab(), toolTab = new Tab();
 
     // google stuff
     public WebView wvGCal = new WebView(), wvDrive = new WebView();
+
+    // settings
+    public MenuItem elemItem = new MenuItem();
+    public MenuButton typeMBtn = new MenuButton();
+    public MenuItem midItem = new MenuItem();
+    public MenuItem highItem = new MenuItem();
+    public MenuItem eduItem = new MenuItem();
+    public MenuItem adminItem = new MenuItem();
+
+    public Tab[] studentItems = {chatTabStudent, gradeStudentTab, classStudentTab};
+    public Tab[] eduItems = {classTeacherTab, chatTabTeacher, gradeTeacherTab, toolTab};
+
 
     @FXML void tabEvents(Event ev) {
         ev.consume();
@@ -37,6 +51,20 @@ public class MainCont {
         WebEngine we = wvDrive.getEngine();
         we.load("https://drive.google.com/drive");
         wvDrive.setZoom(0.8);
+    }
+
+    @FXML void hideStudentItems() {
+        mainTabs.getTabs().remove(chatTabStudent);
+        mainTabs.getTabs().remove(classStudentTab);
+        mainTabs.getTabs().remove(gradeStudentTab);
+
+    }
+
+    @FXML void hideTeacherItems() {
+        mainTabs.getTabs().remove(chatTabTeacher);
+        mainTabs.getTabs().remove(classTeacherTab);
+        mainTabs.getTabs().remove(gradeTeacherTab);
+        mainTabs.getTabs().remove(toolTab);
     }
 
 }
