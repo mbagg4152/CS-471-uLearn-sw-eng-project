@@ -1,3 +1,11 @@
 package ulearn.controllers;
 
-public class ChatStudentCont {}
+import javafx.scene.control.Button;
+
+public class ChatStudentCont {
+    public Button chatsvhomesubmit;
+    public Button chatsvhomesubmit1;
+    public Button chatsvhomesubmit2;
+    public Button chatsvhomesubmit3;
+    public Button chatsvhomesubmit4;
+}
