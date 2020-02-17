@@ -128,13 +128,13 @@
 
       </Tab>
       <Tab closable="false" text="Class Two">
-        <fx:include source="class_page_st_generic.fxml" />
+        <fx:include source="classpage_student.fxml" />
       </Tab>
       <Tab closable="false" text="Class Three">
-        <fx:include source="class_page_st_generic.fxml" />
+        <fx:include source="classpage_student.fxml" />
       </Tab>
       <Tab closable="false" text="Class Four">
-        <fx:include source="class_page_st_generic.fxml" />
+        <fx:include source="classpage_student.fxml" />
       </Tab>
     </TabPane>
   </AnchorPane>
