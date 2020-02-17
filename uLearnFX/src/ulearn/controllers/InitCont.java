@@ -11,25 +11,27 @@ import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
+import javax.swing.*;
 import java.io.IOException;
 
 import static javafx.fxml.FXMLLoader.load;
 
 public class InitCont {
     // for login
-    public Button loginBtn = new Button();
+    public Label title = new Label();
     public Label unameLabel = new Label(), pwdLabel = new Label();
     public TextField unameBox = new TextField();
     public PasswordField pwdBox = new PasswordField();
+    public Button loginBtn = new Button();
 
     // for login_popup
-    public Text uNameInfo = new Text(), pwdInfo = new Text(), dispUName = new Text(), dispPwd = new Text();
+    public Label uNameInfo = new Label(), pwdInfo = new Label(), dispUName = new Label(), dispPwd = new Label();
     public Button goHomeBtn = new Button();
 
     @FXML private void loginBtnAction(ActionEvent event) throws IOException {
         event.consume();
-        String path = "../layout/login_popup.fxml";
-        setupOnClick(path, loginBtn, 300, 140, false);
+        String path = "../layout/main_screen.fxml";
+        setupOnClick(path, loginBtn, 600, 350, true);
     }
 
     @FXML private void mainScreen(ActionEvent event) throws IOException {
