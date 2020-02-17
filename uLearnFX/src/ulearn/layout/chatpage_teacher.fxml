@@ -11,27 +11,31 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="ulearn.controllers.ChatTeacherCont"
             prefHeight="400.0" prefWidth="600.0">
-  <AnchorPane prefHeight="411.0" prefWidth="663.0">
-    <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
-      <ScrollPane prefHeight="251.0" prefWidth="374.0">
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
+  <AnchorPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <HBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane prefHeight="312.0" prefWidth="114.0">
+        <Pane prefHeight="528.0" prefWidth="94.0">
+          <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
+          <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
+        </Pane>
       </ScrollPane>
-      <Button fx:id="chatsvhomesubmit" layoutX="293.0" layoutY="251.0" mnemonicParsing="false" prefHeight="62.0"
-              prefWidth="81.0" text="Send"/>
-      <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
-    </Pane>
-    <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-      <Pane prefHeight="528.0" prefWidth="94.0">
-        <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
-        <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
+      <Pane prefHeight="314.0" prefWidth="374.0">
+        <ScrollPane prefHeight="251.0" prefWidth="374.0">
+          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
+        </ScrollPane>
+        <Button fx:id="chatsvhomesubmit" layoutX="293.0" layoutY="251.0" mnemonicParsing="false" prefHeight="62.0"
+                prefWidth="81.0" text="Send"/>
+        <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
       </Pane>
-    </ScrollPane>
-    <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
-      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
-        <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
-        <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
-        <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
-      </AnchorPane>
-    </ScrollPane>
+      <ScrollPane prefHeight="312.0" prefWidth="114.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
+          <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
+          <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
+          <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
+        </AnchorPane>
+      </ScrollPane>
+    </HBox>
   </AnchorPane>
 </AnchorPane>
