@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -161,5 +162,40 @@
         </AnchorPane>
       </children>
     </GridPane>
+=======
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ulearn.controllers.ChatStudentCont"
+            prefHeight="400.0" prefWidth="600.0">
+  <AnchorPane prefHeight="411.0" prefWidth="663.0">
+    <Pane layoutX="113.0" layoutY="42.0" prefHeight="314.0" prefWidth="374.0">
+      <ScrollPane prefHeight="251.0" prefWidth="374.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This Software is Amazing!"/>
+      </ScrollPane>
+      <Button fx:id="chatsvhomesubmit" layoutX="293.0" layoutY="251.0" mnemonicParsing="false" prefHeight="62.0"
+              prefWidth="81.0" text="Send"/>
+      <TextField layoutY="251.0" prefHeight="62.0" prefWidth="290.0"/>
+    </Pane>
+    <ScrollPane layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
+      <Pane prefHeight="528.0" prefWidth="94.0">
+        <Text layoutX="34.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class"/>
+        <Text layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Homework Group"/>
+      </Pane>
+    </ScrollPane>
+    <ScrollPane layoutX="487.0" layoutY="42.0" prefHeight="312.0" prefWidth="114.0">
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="514.0" prefWidth="94.0">
+        <Text layoutX="22.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Members"/>
+        <Text layoutX="26.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher"/>
+        <Text layoutX="23.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student1"/>
+      </AnchorPane>
+    </ScrollPane>
+>>>>>>> b7590475764619d6423f9130b8e63732c6c19f1a
   </AnchorPane>
 </AnchorPane>
