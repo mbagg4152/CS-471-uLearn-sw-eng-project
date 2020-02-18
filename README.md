@@ -25,13 +25,23 @@ For people involved in any part of the education system, from kindergarten throu
 
 <a name="codeprocess"></a>
 ## 3. How to Run
+NOTE: Unfortunately, due to some issues, this project was not exported to a .jar file. The export options used by Intellij are not supported in the SDK that was used to develop this project.
+### In Eclipse:
+* Install Eclipse for Java developers
+* Load project from directory
+* Press the build button in Eclipse.
 
-* Info on how to run the code goes here
+### In Intellij:
+* Open the project in Intellij
+* In build configuration make sure that the project is using JRE 11
+* Open Project structures, select Java11 as the project SDK & select the language level to be 11.
+* Set the output folder to <some-path>/uLearnFX/out
+* Run the project. If Intellij does not have the run option available, close and reopen.
 
 <a name="install"></a>
 ## 4. Installation
 
-* This application is currently in the prototype stage. When it's available for installation, more details will be added. 
+* This application is currently in the prototype stage. Make sure all project files are in the same folder, 
 
 <a name="built"></a>
 ## 5. Built With
