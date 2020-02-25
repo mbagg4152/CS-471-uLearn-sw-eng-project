@@ -1,35 +1,28 @@
-"user":{
-  "userType":"student", "userId": "444123", "name": "chris", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
-}
-"user":{
-  "userType":"student", "userId": "444124", "name": "nate", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
-}
-"user":{
-  "userType":"student", "userId": "444125", "name": "zack", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
-}
-"user":{
+{
+  "users":[{
+    "userType":"student", "userId": "444123", "name": "chris", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
+  },{
+    "userType":"student", "userId": "444124", "name": "nate", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
+  },{
+    "userType":"student", "userId": "444125", "name": "zack", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
+  },{
   "userType":"student", "userId": "444126", "name": "rachael", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
-}
-"user":{
+},{
   "userType":"student", "userId": "444127", "name": "braylond", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
-}
-"user":{
+},{
   "userType":"student", "userId": "444128", "name": "maggie", "classList":["c123","c124","c125"], "gpa": 1, "gradDate": "mm/dd/yy"
-}
-"user":{
+},{
   "userType":"teacher",   "userId": "444129", "name": "vineyard", "classList":["c123","c124","c125"]
-}
-"user":{
+},{
   "userType":"admin", "userId": "444130", "name": "nancy"
-}
+}],
 
-
-"class":{
+"classes":[{
   "name":"class-101", "classId":"c123", "teacher":"vineyard", "students":["44123","44124","44125","44126","44127","44128"]
-}
-"class":{
+},{
   "name":"class-102", "classId":"c124","teacher":"vineyard", "students":["44123","44124","44125","44126","44127","44128"]
-}
-"class":{
+},{
   "name":"class-105", "classId":"c125","teacher":"vineyard", "students":["44123","44124","44125","44126","44127","44128"]
+}]
+
 }
