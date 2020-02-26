@@ -8,13 +8,7 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
-import java.io.FileReader;
-import java.io.IOException;
+import ulearn.utils.JsonReader;
 
 public class Main extends Application {
     // for login
@@ -43,26 +37,9 @@ public class Main extends Application {
 
     }
 
-
     void readJson() {
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        JSONParser jsonParser = new JSONParser();
-        JSONObject jObj = null;
-        try {
-            jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
-        } catch (IOException | ParseException e) { e.printStackTrace(); }
-        assert jObj != null;
-        JSONArray userArr = (JSONArray) jObj.get("users");
-        JSONArray classArr = (JSONArray) jObj.get("classes");
-        for (Object o : userArr) {
-            //System.out.println(o);
-            JSONObject tmp = (JSONObject) o;
-            String name = (String) tmp.get("name");
-            System.out.println("Name: " + name);
-        }
-//        for (Object o : classArr) {
-//            //System.out.println(o);
-//        }
+        JsonReader jReader = new JsonReader();
+        jReader.readJson();
     }
 
     public static void main(String[] args) {
