@@ -9,6 +9,11 @@ import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 import org.json.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Main extends Application {
     // for login
@@ -40,7 +45,12 @@ public class Main extends Application {
 
     void readJson() {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        JSONObject jObj = new JSONObject();
+        JSONParser jsonParser = new JSONParser();
+        try {
+            JSONObject jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {

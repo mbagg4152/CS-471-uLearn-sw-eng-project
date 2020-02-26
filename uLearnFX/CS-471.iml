@@ -9,5 +9,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="MigLayout" level="project" />
     <orderEntry type="library" name="json-20190722" level="project" />
+    <orderEntry type="library" name="easyjson-core-2.1.0" level="project" />
+    <orderEntry type="library" name="langx-java-1.1.0" level="project" />
+    <orderEntry type="library" name="simplejson-to-easyjson-2.1.0" level="project" />
+    <orderEntry type="library" name="slf4j-api-1.7.25" level="project" />
   </component>
 </module>
