@@ -8,7 +8,8 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-import org.json.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -46,10 +47,16 @@ public class Main extends Application {
     void readJson() {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
         JSONParser jsonParser = new JSONParser();
+        JSONObject jObj = null;
         try {
-            JSONObject jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
+            jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
         } catch (IOException | ParseException e) {
             e.printStackTrace();
+        }
+        assert jObj != null;
+        JSONArray jsonArray = (JSONArray) jObj.get("users");
+        for (Object o : jsonArray) {
+            System.out.println(o);
         }
     }
 
