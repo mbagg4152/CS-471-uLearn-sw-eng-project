@@ -50,14 +50,19 @@ public class Main extends Application {
         JSONObject jObj = null;
         try {
             jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
-        } catch (IOException | ParseException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException | ParseException e) { e.printStackTrace(); }
         assert jObj != null;
-        JSONArray jsonArray = (JSONArray) jObj.get("users");
-        for (Object o : jsonArray) {
-            System.out.println(o);
+        JSONArray userArr = (JSONArray) jObj.get("users");
+        JSONArray classArr = (JSONArray) jObj.get("classes");
+        for (Object o : userArr) {
+            //System.out.println(o);
+            JSONObject tmp = (JSONObject) o;
+            String name = (String) tmp.get("name");
+            System.out.println("Name: " + name);
         }
+//        for (Object o : classArr) {
+//            //System.out.println(o);
+//        }
     }
 
     public static void main(String[] args) {
