@@ -8,10 +8,7 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
+import org.json.JSONObject;
 
 public class Main extends Application {
     // for login
@@ -43,18 +40,7 @@ public class Main extends Application {
 
     void readJson() {
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        try {
-            File myObj = new File("database.json");
-            Scanner myReader = new Scanner(myObj);
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                //System.out.println(data);
-            }
-            myReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
+        JSONObject jObj = new JSONObject();
     }
 
     public static void main(String[] args) {
