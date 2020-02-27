@@ -1,3 +1,9 @@
 package ulearn.utils;
 
-public class Admin {}
+import java.util.List;
+
+public class Admin extends User {
+    public Admin(String userId, String userRealName, String password, List<String> classes) {
+        super(userId, userRealName, password, classes);
+    }
+}
