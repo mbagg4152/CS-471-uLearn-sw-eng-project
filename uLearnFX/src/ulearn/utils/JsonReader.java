@@ -76,9 +76,7 @@ public class JsonReader {
 	public void getItemList() {}
 
 	// either to confirm something is in a list or used to get other contents of a list, TBD
-	public void getSingleItemFromList() {
-
-	}
+	public void getSingleItemFromList() {}
 
 	public void setJObj(JSONObject jo) { this.jObj = jo; }
 

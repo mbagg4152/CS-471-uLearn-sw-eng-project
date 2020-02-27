@@ -2,6 +2,30 @@
   "users": [
     {
       "userType": "student",
+      "userId": "000",
+      "name": "dummy1",
+      "classList": [
+        "c123",
+        "c124",
+        "c125"
+      ],
+      "gpa": 1,
+      "gradDate": "mm/dd/yy"
+    },
+    {
+      "userType": "student",
+      "userId": "001",
+      "name": "dummy2",
+      "classList": [
+        "c123",
+        "c124",
+        "c125"
+      ],
+      "gpa": 1,
+      "gradDate": "mm/dd/yy"
+    },
+    {
+      "userType": "student",
       "userId": "444123",
       "name": "chris",
       "classList": [
