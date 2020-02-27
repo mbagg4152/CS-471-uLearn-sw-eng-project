@@ -9,69 +9,83 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class JsonReader {
-    public JsonReader() {
+	JSONObject jObj;
 
-    }
+	public JsonReader() {
 
-    public void readJson() {
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        JSONParser jsonParser = new JSONParser();
-        JSONObject jObj = null;
-        try {
-            jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
-        } catch (IOException | ParseException e) { e.printStackTrace(); }
-        assert jObj != null;
-//        JSONArray userArr = (JSONArray) jObj.get("users");
-//        JSONArray classArr = (JSONArray) jObj.get("classes");
-//        for (Object o : userArr) {
-//            JSONObject tmp = (JSONObject) o;
-//            JSONArray jArr = (JSONArray) tmp.get("classList");
-//            String name = (String) tmp.get("name");
-//            System.out.println("User's name: " + name);
-//            for (Object t : jArr) {
-//                JSONObject tmpInner = (JSONObject) t;
-//                System.out.print(" class id: " + tmpInner.toString());
-//            }
-//
-//
-//        }
-//        for (Object o : classArr) {
-//            JSONObject tmp = (JSONObject) o;
-//            String name = (String) tmp.get("name");
-//            System.out.println("Class name: " + name);
-//        }
-        printContents(jObj, "users", "name", "classList", "user's name:", "has class with id:");
-        printContents(jObj, "classes", "name", "students", "class name:", "student id:");
+	}
 
-    }
+	public void setJObj(JSONObject jo) {
+		this.jObj = jo;
+	}
 
-    public void printContents(JSONObject jObj, String objectLabel, String arrKey, String listName, String outerLabel, String innerLabel) {
-        JSONArray userArr = (JSONArray) jObj.get(objectLabel);
-        for (Object obj : userArr) {
-            JSONObject tmp = (JSONObject) obj;
-            String name = (String) tmp.get(arrKey);
+	public JSONObject getJObj() {
+		return jObj;
+	}
 
-            System.out.print(outerLabel + " " + name + ". ");
-            if (objectLabel.equals("users")) {
-                String type = (String) tmp.get("userType");
+	public void readJson() {
+		System.out.println("Working Directory = " + System.getProperty("user.dir"));
+		JSONParser jsonParser = new JSONParser();
+		jObj = null;
+		try {
+			jObj = (JSONObject) jsonParser.parse(new FileReader("database.json"));
+		} catch (IOException | ParseException e) { e.printStackTrace(); }
+		assert jObj != null;
+		setJObj(jObj);
+		String someId = getSingleItem("classes", "classId", "c125", "name");
+		System.out.println("got value " + someId + " from using id c125");
 
-                if (!type.equals("admin")) {
-                    JSONArray jArr = (JSONArray) tmp.get(listName);
-                    for (Object t : jArr) {
-                        System.out.print(" " + innerLabel + " " + t);
-                    }
+	}
 
-                }
-            } else {
-                JSONArray jArr = (JSONArray) tmp.get(listName);
-                for (Object t : jArr) {
-                    System.out.print(" " + innerLabel + " " + t);
-                }
+	// pass in value that is known to get array index and using it to get another item
+	// ex: given an id get a class name
+	String getSingleItem(String itemType, String knownKey, String knownValue, String lookFor) {
+		JSONArray userArr = (JSONArray) jObj.get(itemType);
+		int index = 0, counter = 0;
+		if (userArr != null) {
+			for (Object ob : userArr) {
+				JSONObject tmp = (JSONObject) ob;
+				String tmpVal = (String) tmp.get(knownKey);
+				if (tmpVal.equals(knownValue)) {
+					index = counter;
+					break;
+				}
+				counter++;
+			}
+			JSONObject current = (JSONObject) userArr.get(index);
+			return (String) current.get(lookFor);
+		}
+		return "error";
+	}
 
-            }
-            System.out.println("");
-        }
-    }
+	public void getItemList() {}
 
+	public void printContents(JSONObject jObj, String objectLabel, String arrKey, String listName, String outerLabel, String innerLabel) {
+		JSONArray userArr = (JSONArray) jObj.get(objectLabel);
+		for (Object obj : userArr) {
+			JSONObject tmp = (JSONObject) obj;
+			String name = (String) tmp.get(arrKey);
+
+			System.out.print(outerLabel + " " + name + ". ");
+			if (objectLabel.equals("users")) {
+				String type = (String) tmp.get("userType");
+
+				if (!type.equals("admin")) {
+					JSONArray jArr = (JSONArray) tmp.get(listName);
+					for (Object t : jArr) {
+						System.out.print(" " + innerLabel + " " + t);
+					}
+
+				}
+			} else {
+				JSONArray jArr = (JSONArray) tmp.get(listName);
+				for (Object t : jArr) {
+					System.out.print(" " + innerLabel + " " + t);
+				}
+
+			}
+			System.out.println("");
+		}
+	}
 
 }
