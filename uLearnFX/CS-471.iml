@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/lib/miglayout-core-javadoc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/miglayout-core-sources.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/miglayout-core.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/miglayout-swing-javadoc.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/miglayout-swing-sources.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/lib/miglayout-swing.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/out/artifacts/CS_471/CS_471.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/out/artifacts/unnamed/unnamed.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="1" />
+    </src_description>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
