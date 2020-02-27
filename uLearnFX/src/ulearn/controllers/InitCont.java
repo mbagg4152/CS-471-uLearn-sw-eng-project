@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
+import ulearn.utils.JsonReader;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -30,14 +31,20 @@ public class InitCont {
 
     @FXML private void loginBtnAction(ActionEvent event) throws IOException {
         event.consume();
-        String path = "../layout/main_screen.fxml";
-        setupOnClick(path, loginBtn, 600, 350, true);
+        if (verifyUser(unameBox.getText(),pwdBox.getText())){
+            String path = "../layout/main_screen.fxml";
+            setupOnClick(path, loginBtn, 600, 350, true);
+        }
+        else {
+            JOptionPane.showMessageDialog(null,"Incorrect Username or Password");
+        }
     }
 
-    @FXML private void mainScreen(ActionEvent event) throws IOException {
-        event.consume();
-        String path = "../layout/main_screen.fxml";
-        setupOnClick(path, goHomeBtn, 600, 350, true);
+    private Boolean verifyUser(String username,String password) {
+        // Compare pass against username pass
+        JsonReader database = new JsonReader();
+        database.readJson();
+        return password.equals(database.getSingleItem("users", "userId", username, "password"));
     }
 
     void setupOnClick(String layout, Button btn, int width, int height, boolean resize) throws IOException {

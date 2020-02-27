@@ -60,22 +60,25 @@ public class JsonReader {
     }
 
     // pass in value that is known to get array index and using it to get another item. ex: given an id get a class name
-    String getSingleItem(String itemType, String knownKey, String knownValue, String lookFor) {
+    public String getSingleItem(String itemType, String knownKey, String knownValue, String lookFor) {
         JSONArray userArr = (JSONArray) jObj.get(itemType);
-        int index = 0, counter = 0;
+        int index = -1, counter = 0;
         if (userArr != null) {
             for (Object ob : userArr) {
                 String tmpVal = (String) ((JSONObject) ob).get(knownKey);
+
                 if (tmpVal.equals(knownValue)) {
                     index = counter;
                     break;
                 }
                 counter++;
             }
-            JSONObject current = (JSONObject) userArr.get(index);
-            return (String) current.get(lookFor);
+            if (index >= 0){
+                JSONObject current = (JSONObject) userArr.get(index);
+                return (String) current.get(lookFor);
+            }
         }
-        return "error";
+        return null;
     }
 
     // to be used to get lists from something, like get list of classes from user or get list of students in classes

@@ -22,7 +22,7 @@
   </Label>
   <TextField fx:id="unameBox" layoutX="104.0" layoutY="103.0" nodeOrientation="LEFT_TO_RIGHT">
     <font>
-      <Font name="Corbel" size="14.0" />
+      <Font name="Arial" size="14.0" />
     </font>
   </TextField>
   <PasswordField fx:id="pwdBox" layoutX="104.0" layoutY="152.0" nodeOrientation="LEFT_TO_RIGHT">
