@@ -7,7 +7,6 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import ulearn.utils.JsonReader;
@@ -29,13 +28,15 @@ public class InitCont {
 	public Label uNameInfo = new Label(), pwdInfo = new Label(), dispUName = new Label(), dispPwd = new Label();
 	public Button goHomeBtn = new Button();
 
+	final int INIT_HT = 600, INIT_WD = 350; // initial width & height of windows
+
 	@FXML private void loginBtnAction(ActionEvent event) throws IOException {
 		event.consume();
 		if (verifyUser(unameBox.getText(), pwdBox.getText())) {
 			String path = "../layout/main_screen.fxml";
-			setupOnClick(path, loginBtn, 600, 350, true);
+			setupOnClick(path, loginBtn, INIT_HT, INIT_WD, true);
 		} else {
-			try {
+			try { // change look & feel for error pop up
 				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 			} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException e) {
 				e.printStackTrace();

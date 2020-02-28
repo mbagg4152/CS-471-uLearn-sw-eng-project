@@ -10,61 +10,60 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 public class MainCont {
-    // main tabs
-    public TabPane mainTabs = new TabPane();
-    public Tab chatTabStudent = new Tab(), classStudentTab = new Tab(), calTab = new Tab(), storageTab = new Tab(),
-            settingsTab = new Tab(), classTeacherTab = new Tab(), chatTabTeacher = new Tab(), homeTab = new Tab(),
-            gradeStudentTab = new Tab(), gradeTeacherTab = new Tab(), toolTab = new Tab();
+	// main tabs
+	public TabPane mainTabs = new TabPane();
+	public Tab chatTabStudent = new Tab(), classStudentTab = new Tab(), calTab = new Tab(), storageTab = new Tab(),
+			settingsTab = new Tab(), classTeacherTab = new Tab(), chatTabTeacher = new Tab(), homeTab = new Tab(),
+			gradeStudentTab = new Tab(), gradeTeacherTab = new Tab(), toolTab = new Tab();
 
-    // google stuff
-    public WebView wvGCal = new WebView(), wvDrive = new WebView();
+	// google stuff
+	public WebView wvGCal = new WebView(), wvDrive = new WebView();
 
-    // settings
-    public MenuItem elemItem = new MenuItem();
-    public MenuButton typeMBtn = new MenuButton();
-    public MenuItem midItem = new MenuItem();
-    public MenuItem highItem = new MenuItem();
-    public MenuItem eduItem = new MenuItem();
-    public MenuItem adminItem = new MenuItem();
+	// settings
+	public MenuItem elemItem = new MenuItem();
+	public MenuButton typeMBtn = new MenuButton();
+	public MenuItem midItem = new MenuItem();
+	public MenuItem highItem = new MenuItem();
+	public MenuItem eduItem = new MenuItem();
+	public MenuItem adminItem = new MenuItem();
 
-    public Tab[] studentItems = {chatTabStudent, gradeStudentTab, classStudentTab};
-    public Tab[] eduItems = {classTeacherTab, chatTabTeacher, gradeTeacherTab, toolTab};
+	public Tab[] studentItems = {chatTabStudent, gradeStudentTab, classStudentTab};
+	public Tab[] eduItems = {classTeacherTab, chatTabTeacher, gradeTeacherTab, toolTab};
 
+	@FXML void tabEvents(Event ev) {
+		ev.consume();
+		if (calTab.isSelected()) {
+			gCalendar();
+		} else if (storageTab.isSelected()) {
+			gDrive();
+		}
+	}
 
-    @FXML void tabEvents(Event ev) {
-        ev.consume();
-        if (calTab.isSelected()) {
-            gCalendar();
-        } else if (storageTab.isSelected()) {
-            gDrive();
-        }
-    }
+	void gCalendar() {
+		WebEngine wEngine = wvGCal.getEngine();
+		wEngine.load("https://calendar.google.com");
+		wvGCal.setZoom(0.8);
 
-    void gCalendar() {
-        WebEngine wEngine = wvGCal.getEngine();
-        wEngine.load("https://calendar.google.com");
-        wvGCal.setZoom(0.8);
+	}
 
-    }
+	void gDrive() {
+		WebEngine we = wvDrive.getEngine();
+		we.load("https://drive.google.com/drive");
+		wvDrive.setZoom(0.8);
+	}
 
-    void gDrive() {
-        WebEngine we = wvDrive.getEngine();
-        we.load("https://drive.google.com/drive");
-        wvDrive.setZoom(0.8);
-    }
+	@FXML void hideStudentItems() {
+		mainTabs.getTabs().remove(chatTabStudent);
+		mainTabs.getTabs().remove(classStudentTab);
+		mainTabs.getTabs().remove(gradeStudentTab);
 
-    @FXML void hideStudentItems() {
-        mainTabs.getTabs().remove(chatTabStudent);
-        mainTabs.getTabs().remove(classStudentTab);
-        mainTabs.getTabs().remove(gradeStudentTab);
+	}
 
-    }
-
-    @FXML void hideTeacherItems() {
-        mainTabs.getTabs().remove(chatTabTeacher);
-        mainTabs.getTabs().remove(classTeacherTab);
-        mainTabs.getTabs().remove(gradeTeacherTab);
-        mainTabs.getTabs().remove(toolTab);
-    }
+	@FXML void hideTeacherItems() {
+		mainTabs.getTabs().remove(chatTabTeacher);
+		mainTabs.getTabs().remove(classTeacherTab);
+		mainTabs.getTabs().remove(gradeTeacherTab);
+		mainTabs.getTabs().remove(toolTab);
+	}
 
 }
