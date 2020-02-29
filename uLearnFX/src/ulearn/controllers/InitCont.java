@@ -15,17 +15,18 @@ import javax.swing.*;
 import java.io.IOException;
 
 import static javafx.fxml.FXMLLoader.load;
+import ulearn.utils.UTypeHolder;
 
 public class InitCont {
 	final String T_STU = "student", T_ADM = "admin", T_EDU = "educator";
-
+	public UTypeHolder holder;
 	// for login
 	public Label title = new Label();
 	public Label unameLabel = new Label(), pwdLabel = new Label();
 	public TextField unameBox = new TextField();
 	public PasswordField pwdBox = new PasswordField();
 	public Button loginBtn = new Button();
-
+	String layoutPath = "";
 	// for login_popup
 	public Label uNameInfo = new Label(), pwdInfo = new Label(), dispUName = new Label(), dispPwd = new Label();
 	public Button goHomeBtn = new Button();
@@ -35,6 +36,7 @@ public class InitCont {
 	@FXML private void loginBtnAction(ActionEvent event) throws IOException {
 		event.consume();
 		String id = unameBox.getText();
+		holder = new UTypeHolder();
 		if (verifyUser(id, pwdBox.getText())) {
 			String path = determineLayout(id);
 			setupOnClick(path, loginBtn, INIT_HT, INIT_WD, true);
@@ -59,7 +61,7 @@ public class InitCont {
 		JsonReader database = new JsonReader();
 		String userType = database.getSingleItem("users", "userId", userId, "userType");
 		System.out.println("user type: " + userType);
-		String layoutPath = "";
+
 		switch (userType) {
 			case T_ADM:
 				layoutPath = "../layout/main_screen_admin.fxml";
