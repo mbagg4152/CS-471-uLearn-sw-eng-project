@@ -24,14 +24,11 @@ public class JsonReader {
 		} catch (IOException | ParseException e) { e.printStackTrace(); }
 		assert jObj != null;
 		setJObj(jObj);
-		String someId = getSingleItem("classes", "classId", "c125", "name"); // get some other value using a known value
-		System.out.println("got value " + someId + " from using id c125");
-		printContents("users", "name", "classList"); // print users & their classes
-
 	}
 
 	// give object type and list name to print out list
 	public void printContents(String objType, String key, String listName) {
+		readJson();
 		JSONArray arr = (JSONArray) jObj.get(objType);
 		for (Object outerOb : arr) {
 			JSONObject tmp = (JSONObject) outerOb;
@@ -61,6 +58,7 @@ public class JsonReader {
 
 	// pass in value that is known to get array index and using it to get another item. ex: given an id get a class name
 	public String getSingleItem(String itemType, String knownKey, String knownValue, String lookFor) {
+		readJson();
 		JSONArray userArr = (JSONArray) jObj.get(itemType);
 		int index = -1, counter = 0;
 		if (userArr != null) {

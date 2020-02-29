@@ -25,7 +25,7 @@ public class GradesTeacherCont {
 
     @FXML private void backToGrades(ActionEvent event) throws IOException {
         event.consume();
-        Parent par = FXMLLoader.load(getClass().getResource("../layout/main_screen.fxml"));
+        Parent par = FXMLLoader.load(getClass().getResource("../layout/main_screen_all.fxml"));
         setupOnClick(par, subBtn, 600, 350, true);
     }
 

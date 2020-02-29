@@ -18,17 +18,8 @@ public class MainCont {
 
 	// google stuff
 	public WebView wvGCal = new WebView(), wvDrive = new WebView();
-
-	// settings
-	public MenuItem elemItem = new MenuItem();
-	public MenuButton typeMBtn = new MenuButton();
-	public MenuItem midItem = new MenuItem();
-	public MenuItem highItem = new MenuItem();
-	public MenuItem eduItem = new MenuItem();
-	public MenuItem adminItem = new MenuItem();
-
-	public Tab[] studentItems = {chatTabStudent, gradeStudentTab, classStudentTab};
-	public Tab[] eduItems = {classTeacherTab, chatTabTeacher, gradeTeacherTab, toolTab};
+	public Tab adminToolTab;
+	public Tab eduToolTab;
 
 	@FXML void tabEvents(Event ev) {
 		ev.consume();
@@ -56,6 +47,7 @@ public class MainCont {
 		mainTabs.getTabs().remove(chatTabStudent);
 		mainTabs.getTabs().remove(classStudentTab);
 		mainTabs.getTabs().remove(gradeStudentTab);
+
 
 	}
 

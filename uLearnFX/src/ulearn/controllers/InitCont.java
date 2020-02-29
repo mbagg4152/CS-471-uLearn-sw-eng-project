@@ -17,6 +17,8 @@ import java.io.IOException;
 import static javafx.fxml.FXMLLoader.load;
 
 public class InitCont {
+	final String T_STU = "student", T_ADM = "admin", T_EDU = "educator";
+
 	// for login
 	public Label title = new Label();
 	public Label unameLabel = new Label(), pwdLabel = new Label();
@@ -32,8 +34,9 @@ public class InitCont {
 
 	@FXML private void loginBtnAction(ActionEvent event) throws IOException {
 		event.consume();
-		if (verifyUser(unameBox.getText(), pwdBox.getText())) {
-			String path = "../layout/main_screen.fxml";
+		String id = unameBox.getText();
+		if (verifyUser(id, pwdBox.getText())) {
+			String path = determineLayout(id);
 			setupOnClick(path, loginBtn, INIT_HT, INIT_WD, true);
 		} else {
 			try { // change look & feel for error pop up
@@ -50,6 +53,28 @@ public class InitCont {
 		JsonReader database = new JsonReader();
 		database.readJson();
 		return password.equals(database.getSingleItem("users", "userId", username, "password"));
+	}
+
+	String determineLayout(String userId) {
+		JsonReader database = new JsonReader();
+		String userType = database.getSingleItem("users", "userId", userId, "userType");
+		System.out.println("user type: " + userType);
+		String layoutPath = "";
+		switch (userType) {
+			case T_ADM:
+				layoutPath = "../layout/main_screen_admin.fxml";
+				break;
+			case T_EDU:
+				layoutPath = "../layout/main_screen_educator.fxml";
+				break;
+			case T_STU:
+				layoutPath = "../layout/main_screen_student.fxml";
+				break;
+			default:
+				layoutPath = "../layout/main_screen_all.fxml";
+		}
+		return layoutPath;
+
 	}
 
 	void setupOnClick(String layout, Button btn, int width, int height, boolean resize) throws IOException {

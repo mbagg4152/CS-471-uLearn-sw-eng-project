@@ -1,12 +1,16 @@
 {
   "users": [
     {
-      "userType": "student", "userId": "000", "name": "dummy1", "classList": ["c123", "c124", "c125"], "gpa": 1,
+      "userType": "student", "userId": "stu", "name": "dummyStudent", "classList": ["c123", "c124", "c125"], "gpa": 1,
       "gradDate": "mm/dd/yy", "password": "1234"
     },
     {
-      "userType": "student", "userId": "001", "name": "dummy2", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
+      "userType": "educator", "userId": "edu", "name": "dummyEdu", "classList": ["c123", "c124", "c125"],
+      "password": "1234"
+    },
+    {
+      "userType": "admin", "userId": "adm", "name": "dummyAdmin", "classList": ["c123", "c124", "c125"],
+      "password": "1234"
     },
     {
       "userType": "student", "userId": "444123", "name": "chris", "classList": ["c123", "c124", "c125"], "gpa": 1,
@@ -33,7 +37,7 @@
       "gradDate": "mm/dd/yy", "password": "1234"
     },
     {
-      "userType": "teacher", "userId": "444129", "name": "vineyard", "classList": ["c123", "c124", "c125"],
+      "userType": "educator", "userId": "444129", "name": "vineyard", "classList": ["c123", "c124", "c125"],
       "password": "1234"
     },
     {"userType": "admin", "userId": "444130", "name": "nancy", "password": "1234"}
