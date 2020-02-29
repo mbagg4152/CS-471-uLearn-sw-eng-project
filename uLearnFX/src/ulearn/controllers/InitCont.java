@@ -18,20 +18,29 @@ import static javafx.fxml.FXMLLoader.load;
 import ulearn.utils.UTypeHolder;
 
 public class InitCont {
-	final String T_STU = "student", T_ADM = "admin", T_EDU = "educator";
+	final String T_STU = "student";
+	final String T_ADM = "admin";
+	final String T_EDU = "educator";
+	// initial width & height of windows
+	final int INIT_WD = 800;
+	final int INIT_HT = 450;
 	public UTypeHolder holder;
 	// for login
 	public Label title = new Label();
-	public Label unameLabel = new Label(), pwdLabel = new Label();
+	public Label unameLabel = new Label();
+	public Label pwdLabel = new Label();
 	public TextField unameBox = new TextField();
 	public PasswordField pwdBox = new PasswordField();
 	public Button loginBtn = new Button();
-	String layoutPath = "";
+
 	// for login_popup
-	public Label uNameInfo = new Label(), pwdInfo = new Label(), dispUName = new Label(), dispPwd = new Label();
+	public Label uNameInfo = new Label();
+	public Label pwdInfo = new Label();
+	public Label dispUName = new Label();
+	public Label dispPwd = new Label();
 	public Button goHomeBtn = new Button();
 
-	final int INIT_HT = 600, INIT_WD = 350; // initial width & height of windows
+	String layoutPath = "";
 
 	@FXML private void loginBtnAction(ActionEvent event) throws IOException {
 		event.consume();
@@ -39,7 +48,7 @@ public class InitCont {
 		holder = new UTypeHolder();
 		if (verifyUser(id, pwdBox.getText())) {
 			String path = determineLayout(id);
-			setupOnClick(path, loginBtn, INIT_HT, INIT_WD, true);
+			setupOnClick(path, loginBtn, INIT_WD, INIT_HT, true);
 		} else {
 			try { // change look & feel for error pop up
 				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -60,8 +69,6 @@ public class InitCont {
 	String determineLayout(String userId) {
 		JsonReader database = new JsonReader();
 		String userType = database.getSingleItem("users", "userId", userId, "userType");
-		System.out.println("user type: " + userType);
-
 		switch (userType) {
 			case T_ADM:
 				layoutPath = "../layout/main_screen_admin.fxml";

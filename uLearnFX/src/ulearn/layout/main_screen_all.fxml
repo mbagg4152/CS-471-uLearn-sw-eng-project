@@ -13,7 +13,7 @@
       <MenuItem mnemonicParsing="false" text="About uLearn"/>
     </Menu>
   </MenuBar>
-  <TabPane fx:id="mainTabsAll" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0"
+  <TabPane fx:id="mtAll" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0"
       prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
       AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
     <Tab fx:id="homeTab" closable="false" text="uLearn Home">
