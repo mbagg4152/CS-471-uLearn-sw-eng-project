@@ -54,7 +54,7 @@ public class MainCont {
 	}
 
 	@FXML void logOut(Event ev) throws IOException {
-		String loginPath = "../layout/login.fxml";
+		String loginPath = "../layout/gen/login.fxml";
 		Window current = null;
 		if (mtAdmin.isFocused()) {
 			current = mtAdmin.getScene().getWindow();
