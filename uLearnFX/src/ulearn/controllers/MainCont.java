@@ -44,7 +44,6 @@ public class MainCont {
 		WebEngine wEngine = wvGCal.getEngine();
 		wEngine.load("https://calendar.google.com");
 		wvGCal.setZoom(0.8);
-
 	}
 
 	void gDrive() {

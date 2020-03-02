@@ -19,13 +19,13 @@
     <Tab fx:id="homeTab" closable="false" text="uLearn Home">
       <fx:include source="../gen/home.fxml"/>
     </Tab>
-    <Tab fx:id="classTeacherTab" closable="false" text="Classes [Educator]">
+    <Tab fx:id="classTeacherTab" closable="false" text="Classes">
       <fx:include source="class_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="gradeTeacherTab" closable="false" text="Grades [Educator]">
+    <Tab fx:id="gradeTeacherTab" closable="false" text="Grades">
       <fx:include source="grades_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabTeacher" closable="false" text="Chat [Educator]">
+    <Tab fx:id="chatTabTeacher" closable="false" text="Chat">
       <fx:include source="chat_teacher.fxml"/>
     </Tab>
     <Tab fx:id="eduToolTab" closable="false" onSelectionChanged="#tabEvents" text="Tools">
