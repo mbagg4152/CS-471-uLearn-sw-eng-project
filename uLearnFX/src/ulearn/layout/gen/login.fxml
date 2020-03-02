@@ -20,7 +20,7 @@
       <Font name="Corbel" size="14.0" />
     </font>
   </Label>
-  <TextField fx:id="unameBox" layoutX="104.0" layoutY="103.0" nodeOrientation="LEFT_TO_RIGHT">
+  <TextField fx:id="unameBox" layoutX="104.0" layoutY="103.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="166.0">
     <font>
       <Font name="Arial" size="14.0" />
     </font>
