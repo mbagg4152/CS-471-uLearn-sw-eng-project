@@ -54,9 +54,9 @@ public class User {
 
     //Adds a class to the list, returns 1 if successful and something else if an error occurred (should only be 1 or 0 though)
     public int addClass(String addedClass) {
-        int check = classes.length;
+        int check = classes.size();
         classes.add(addedClass);
-        check = classes.length - check;
+        check = classes.size() - check;
         return check;
     }
 

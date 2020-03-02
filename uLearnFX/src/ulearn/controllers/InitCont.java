@@ -6,16 +6,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import ulearn.utils.JsonReader;
+import ulearn.utils.UTypeHolder;
 
 import javax.swing.*;
 import java.io.IOException;
-
-import static javafx.fxml.FXMLLoader.load;
-import ulearn.utils.UTypeHolder;
 
 public class InitCont {
 	final String T_STU = "student";
@@ -71,16 +72,16 @@ public class InitCont {
 		String userType = database.getSingleItem("users", "userId", userId, "userType");
 		switch (userType) {
 			case T_ADM:
-				layoutPath = "../layout/main_screen_admin.fxml";
+				layoutPath = "../layout/admin/main_screen_admin.fxml";
 				break;
 			case T_EDU:
-				layoutPath = "../layout/main_screen_educator.fxml";
+				layoutPath = "../layout/edu/main_screen_educator.fxml";
 				break;
 			case T_STU:
-				layoutPath = "../layout/main_screen_student.fxml";
+				layoutPath = "../layout/student/main_screen_student.fxml";
 				break;
 			default:
-				layoutPath = "../layout/main_screen_all.fxml";
+				layoutPath = "../layout/gen/main_screen_all.fxml";
 		}
 		return layoutPath;
 

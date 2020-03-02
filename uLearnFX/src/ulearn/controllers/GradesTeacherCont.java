@@ -19,13 +19,13 @@ public class GradesTeacherCont {
 
     @FXML private void newGrade(ActionEvent event) throws IOException {
         event.consume();
-        Parent par = FXMLLoader.load(getClass().getResource("../layout/grade_add_dialog.fxml"));
+        Parent par = FXMLLoader.load(getClass().getResource("../layout/edu/grade_add_dialog.fxml"));
         setupOnClick(par, subGradeBtn, 600, 350, true);
     }
 
     @FXML private void backToGrades(ActionEvent event) throws IOException {
         event.consume();
-        Parent par = FXMLLoader.load(getClass().getResource("../layout/main_screen_all.fxml"));
+        Parent par = FXMLLoader.load(getClass().getResource("../layout/gen/main_screen_all.fxml"));
         setupOnClick(par, subBtn, 600, 350, true);
     }
 

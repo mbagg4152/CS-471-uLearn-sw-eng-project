@@ -12,7 +12,7 @@ public class Main extends Application {
 	final int INIT_HT = 275;
 
 	@Override public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("layout/login.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("layout/gen/login.fxml"));
 		primaryStage.setTitle("uLearn");
 		primaryStage.setScene(new Scene(root, INIT_WD, INIT_HT));
 		primaryStage.setResizable(true);
