@@ -26,6 +26,11 @@ public class JsonReader {
 		setJObj(jObj);
 	}
 
+	public JSONArray getJsonArr(String arrName) {
+		readJson();
+		return (JSONArray) jObj.get(arrName);
+	}
+
 	// give object type and list name to print out list
 	public void printContents(String objType, String key, String listName) {
 		readJson();

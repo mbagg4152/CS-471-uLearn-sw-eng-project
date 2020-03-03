@@ -1,59 +1,47 @@
 {
-  "users": [
-    {
-      "userType": "student", "userId": "stu", "name": "dummyStudent", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "educator", "userId": "edu", "name": "dummyEdu", "classList": ["c123", "c124", "c125"],
-      "password": "1234"
-    },
-    {
-      "userType": "admin", "userId": "adm", "name": "dummyAdmin", "classList": ["c123", "c124", "c125"],
-      "password": "1234"
-    },
-    {
-      "userType": "student", "userId": "444123", "name": "chris", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "student", "userId": "444124", "name": "nate", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "student", "userId": "444125", "name": "zack", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "student", "userId": "444126", "name": "rachael", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "student", "userId": "444127", "name": "braylond", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "student", "userId": "444128", "name": "maggie", "classList": ["c123", "c124", "c125"], "gpa": 1,
-      "gradDate": "mm/dd/yy", "password": "1234"
-    },
-    {
-      "userType": "educator", "userId": "444129", "name": "vineyard", "classList": ["c123", "c124", "c125"],
-      "password": "1234"
-    },
-    {"userType": "admin", "userId": "444130", "name": "nancy", "password": "1234"}
-  ],
   "classes": [
     {
-      "name": "class-101", "classId": "c123", "teacher": "vineyard",
+      "classId": "c123", "teacher": "vineyard", "name": "class-101",
       "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
-    },
-    {
-      "name": "class-102", "classId": "c124", "teacher": "vineyard",
+    }, {
+      "classId": "c124", "teacher": "vineyard", "name": "class-102",
       "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
-    },
-    {
-      "name": "class-105", "classId": "c125", "teacher": "vineyard",
+    }, {
+      "classId": "c125", "teacher": "vineyard", "name": "class-105",
       "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
     }
-  ]
+  ], "users": [
+  {
+    "password": "1234", "name": "dummyStudent", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd",
+    "userId": "stu", "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "dummyEdu", "userType": "educator", "userId": "edu",
+    "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "dummyAdmin", "userType": "admin", "userId": "adm",
+    "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "chris", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd", "userId": "444123",
+    "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "nate", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd", "userId": "444124",
+    "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "zack", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd", "userId": "444125",
+    "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "rachael", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd",
+    "userId": "444126", "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "braylond", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd",
+    "userId": "444127", "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "maggie", "gpa": 1, "userType": "student", "gradDate": "yyyy-mm-dd", "userId": "444128",
+    "classList": ["c123", "c124", "c125"]
+  }, {
+    "password": "1234", "name": "vineyard", "userType": "educator", "userId": "444129",
+    "classList": ["c123", "c124", "c125"]
+  }, {"password": "1234", "name": "nancy", "userType": "admin", "userId": "444130"},
+  {"password": "1234", "name": "tstname last", "gradDate": "2020-03-31", "userType": "student", "userId": "tstid"}
+]
 }

@@ -38,30 +38,23 @@
                <Font name="Corbel" size="14.0" />
             </font>
          </Text>
-         <ScrollPane prefHeight="158.0" prefWidth="158.0" GridPane.rowIndex="2">
-           <content>
-             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-           </content>
-            <padding>
-               <Insets right="5.0" />
-            </padding>
-         </ScrollPane>
+        <ScrollPane prefHeight="158.0" prefWidth="158.0" GridPane.rowIndex="2">
+          <padding>
+            <Insets right="5.0"/>
+          </padding>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="200.0"
+              prefWidth="200.0"/>
+        </ScrollPane>
          <Accordion maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="2">
            <panes>
              <TitledPane animated="false" text="Task 1">
-               <content>
-                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
              </TitledPane>
              <TitledPane animated="false" text="Task 2">
-               <content>
-                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
              </TitledPane>
              <TitledPane animated="false" text="Task 3">
-               <content>
-                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-               </content>
+               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
              </TitledPane>
            </panes>
          </Accordion>
