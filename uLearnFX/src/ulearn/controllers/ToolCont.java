@@ -26,15 +26,16 @@ public class ToolCont {
 	public void makeNewUser(ActionEvent event) {
 		jr.readJson();
 		JSONObject jo = jr.getJObj();
-		//System.out.println(jo);
-		JSONArray arr = jr.getJsonArr("users");
-		jo.remove("users");
-		String gradDate = newGradDate.getValue().toString();
+		JSONArray arr = jr.getJsonArr("users"); // get copy of arr
+		jo.remove("users"); // only could get copy of arr. delete arr since it will be overwritten
+		String gradDate = null;
 		String newName = txtNewFirst.getText() + " " + txtNewLast.getText();
 		String newPwd = txtNewPwd.getText();
 		String newUuid = txtNewUuid.getText();
-
 		String userType = "undefined";
+
+		if (newGradDate.getValue() != null) gradDate = newGradDate.getValue().toString();
+
 		if (adminBtn.isSelected()) {
 			userType = "admin";
 		} else if (eduBtn.isSelected()) {
@@ -50,9 +51,6 @@ public class ToolCont {
 
 		arr.add(newUser);
 		jo.put("users", arr);
-		System.out.println(arr);
-		System.out.println();
-		System.out.println(jo);
 
 		//Write JSON file
 		try (FileWriter file = new FileWriter("database.json")) {

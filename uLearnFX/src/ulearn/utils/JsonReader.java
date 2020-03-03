@@ -16,7 +16,7 @@ public class JsonReader {
 	}
 
 	public void readJson() {
-		System.out.println("Working Directory = " + System.getProperty("user.dir")); // for debug purposes
+		//System.out.println("Working Directory = " + System.getProperty("user.dir")); // for debug purposes
 		JSONParser jsonParser = new JSONParser(); // reads json file
 		jObj = null;
 		try {
