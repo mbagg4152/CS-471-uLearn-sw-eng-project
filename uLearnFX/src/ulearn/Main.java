@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import ulearn.utils.JsonReader;
+import ulearn.utils.*;
 
 public class Main extends Application {
 	final int INIT_WD = 300;
