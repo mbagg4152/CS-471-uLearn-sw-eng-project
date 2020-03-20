@@ -5,6 +5,7 @@ import javafx.scene.control.*;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import ulearn.utils.*;
+import static ulearn.utils.Const.*;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -26,34 +27,34 @@ public class ToolCont {
 	public void makeNewUser(ActionEvent event) {
 		jr.readJson();
 		JSONObject jo = jr.getJObj();
-		JSONArray arr = jr.getJsonArr("users"); // get copy of arr
-		jo.remove("users"); // only could get copy of arr. delete arr since it will be overwritten
+		JSONArray arr = jr.getJsonArr(lUser); // get copy of arr
+		jo.remove(lUser); // only could get copy of arr. delete arr since it will be overwritten
 		String gradDate = null;
 		String newName = txtNewFirst.getText() + " " + txtNewLast.getText();
 		String newPwd = txtNewPwd.getText();
 		String newUuid = txtNewUuid.getText();
-		String userType = "undefined";
+		String userType = tUndef;
 
 		if (newGradDate.getValue() != null) gradDate = newGradDate.getValue().toString();
 
 		if (adminBtn.isSelected()) {
-			userType = "admin";
+			userType = tAdm;
 		} else if (eduBtn.isSelected()) {
-			userType = "educator";
-		} else if (studentBtn.isSelected()) userType = "student";
+			userType = tEdu;
+		} else if (studentBtn.isSelected()) userType = tStu;
 
 		JSONObject newUser = new JSONObject();
-		if (newUuid != null) newUser.put(S.lUid, newUuid);
-		if (newName != null) newUser.put(S.lName, newName);
-		if (newPwd != null) newUser.put("password", newPwd);
-		if (gradDate != null) newUser.put("gradDate", gradDate);
-		newUser.put("userType", userType);
+		if (newUuid != null) newUser.put(lUid, newUuid);
+		if (newName != null) newUser.put(lName, newName);
+		if (newPwd != null) newUser.put(lPwd, newPwd);
+		if (gradDate != null) newUser.put(lGrad, gradDate);
+		newUser.put(lUType, userType);
 
 		arr.add(newUser);
-		jo.put(S.lUser, arr);
+		jo.put(lUser, arr);
 
 		//Write JSON file
-		try (FileWriter file = new FileWriter(S.pUserDb)) {
+		try (FileWriter file = new FileWriter(pUserDb)) {
 			file.write(jo.toJSONString());
 			file.flush();
 		} catch (IOException e) {

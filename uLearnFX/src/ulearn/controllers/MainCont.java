@@ -5,17 +5,20 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Tab;
+import javafx.scene.control.TabPane;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
-import javafx.stage.*;
+import javafx.stage.Stage;
+import javafx.stage.Window;
+import static ulearn.utils.Const.*;
 
 import java.io.IOException;
 
 public class MainCont {
-	final String T_STU = "student";
-	final String T_ADM = "admin";
-	final String T_EDU = "educator";
+	final String T_STU = tStu;
+	final String T_ADM = tAdm;
+	final String T_EDU = tEdu;
 	final int LOGIN_WD = 300;
 	final int LOGIN_HT = 275;
 
@@ -42,18 +45,17 @@ public class MainCont {
 
 	void gCalendar() {
 		WebEngine wEngine = wvGCal.getEngine();
-		wEngine.load("https://calendar.google.com");
+		wEngine.load(urlCalendar);
 		wvGCal.setZoom(0.8);
 	}
 
 	void gDrive() {
 		WebEngine we = wvDrive.getEngine();
-		we.load("https://drive.google.com/drive");
+		we.load(urlDrive);
 		wvDrive.setZoom(0.8);
 	}
 
 	@FXML void logOut(Event ev) throws IOException {
-		String loginPath = "../layout/gen/login.fxml";
 		Window current = null;
 		if (mtAdmin.isFocused()) {
 			current = mtAdmin.getScene().getWindow();
@@ -64,7 +66,7 @@ public class MainCont {
 		} else if (mtAll.isFocused()) {
 			current = mtAll.getScene().getWindow();
 		}
-		backToLogin(loginPath, current, LOGIN_WD, LOGIN_HT);
+		backToLogin(pLogin, current, LOGIN_WD, LOGIN_HT);
 
 	}
 

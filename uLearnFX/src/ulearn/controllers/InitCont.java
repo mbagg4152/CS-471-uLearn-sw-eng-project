@@ -10,18 +10,21 @@ import javafx.scene.control.*;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import ulearn.utils.*;
+import static ulearn.utils.Const.*;
 
 import javax.swing.*;
 import java.io.IOException;
 
 public class InitCont {
-	final String T_STU = "student";
-	final String T_ADM = "admin";
-	final String T_EDU = "educator";
+	final String T_STU = tStu;
+	final String T_ADM = tAdm;
+	final String T_EDU = tEdu;
+
 	// initial width & height of windows
 	final int INIT_WD = 800;
 	final int INIT_HT = 450;
 	public UTypeHolder holder;
+
 	// for login
 	public Label title = new Label();
 	public Label unameLabel = new Label();
@@ -60,24 +63,24 @@ public class InitCont {
 		// Compare pass against username pass
 		JsonReader database = new JsonReader();
 		database.readJson();
-		return password.equals(database.getSingleItem("users", "userId", username, "password"));
+		return password.equals(database.getSingleItem(lUser, lUid, username, lPwd));
 	}
 
 	String determineLayout(String userId) {
 		JsonReader database = new JsonReader();
-		String userType = database.getSingleItem("users", "userId", userId, "userType");
+		String userType = database.getSingleItem(lUser, lUid, userId, lUType);
 		switch (userType) {
 			case T_ADM:
-				layoutPath = "../layout/admin/main_screen_admin.fxml";
+				layoutPath = pMainAdm;
 				break;
 			case T_EDU:
-				layoutPath = "../layout/edu/main_screen_educator.fxml";
+				layoutPath = pMainEdu;
 				break;
 			case T_STU:
-				layoutPath = "../layout/student/main_screen_student.fxml";
+				layoutPath = pMainStu;
 				break;
 			default:
-				layoutPath = "../layout/gen/main_screen_all.fxml";
+				layoutPath = pMainAll;
 		}
 		return layoutPath;
 
