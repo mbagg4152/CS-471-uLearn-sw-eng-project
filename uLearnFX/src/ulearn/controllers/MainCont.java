@@ -15,9 +15,6 @@ import static ulearn.utils.Const.*;
 import java.io.IOException;
 
 public class MainCont {
-	final String T_STU = tStu;
-	final String T_ADM = tAdm;
-	final String T_EDU = tEdu;
 	final int LOGIN_WD = 300;
 	final int LOGIN_HT = 275;
 
@@ -26,23 +23,29 @@ public class MainCont {
 	public TabPane mtAll = new TabPane();
 	public TabPane mtEdu = new TabPane();
 	public TabPane mtStudent = new TabPane();
+
 	public Tab calTab = new Tab();
 	public Tab storageTab = new Tab();
+	public Tab homeTab;
+	public Tab settingsTab;
 
-	// google stuff
+	public Tab eduClassTab;
+	public Tab eduGradeTab;
+	public Tab eduChatTab;
+	public Tab eduToolTab;
+
+	public Tab stuClassTab;
+	public Tab stuGradeTab;
+	public Tab stuChatTab;
+
+	public Tab adminToolTab;
+
 	public WebView wvGCal = new WebView();
 	public WebView wvDrive = new WebView();
-	public Tab homeTab;
-	public Tab classEduTab;
-	public Tab gradeEduTab;
-	public Tab chatTabEdu;
-	public Tab eduToolTab;
-	public MenuItem exitEdu;
-	public Tab settingsTab;
-	public MenuItem exitStudent;
-	public Tab classStudentTab;
-	public Tab gradeStudentTab;
-	public Tab chatTabStudent;
+
+	public MenuItem eduExit;
+	public MenuItem stuExit;
+	public MenuItem admExit;
 
 	@FXML void tabEvents(Event ev) {
 		ev.consume();

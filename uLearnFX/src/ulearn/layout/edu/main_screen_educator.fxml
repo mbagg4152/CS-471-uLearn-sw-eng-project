@@ -7,7 +7,7 @@
   <MenuBar layoutY="2.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="25.0" prefWidth="600.0"
       AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <Menu mnemonicParsing="false" text="Menu">
-      <MenuItem mnemonicParsing="false" fx:id="exitEdu" onAction="#logOut" text="Sign out"/>
+      <MenuItem mnemonicParsing="false" fx:id="eduExit" onAction="#logOut" text="Sign out"/>
     </Menu>
     <Menu mnemonicParsing="false" text="Help">
       <MenuItem mnemonicParsing="false" text="About uLearn"/>
@@ -22,10 +22,10 @@
     <Tab fx:id="classEduTab" closable="false" text="Classes">
       <fx:include source="class_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="gradeEduTab" closable="false" text="Grades">
+    <Tab fx:id="eduGradeTab" closable="false" text="Grades">
       <fx:include source="grades_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabEdu" closable="false" text="Chat">
+    <Tab fx:id="eduChatTab" closable="false" text="Chat">
       <fx:include source="chat_teacher.fxml"/>
     </Tab>
     <Tab fx:id="eduToolTab" closable="false" onSelectionChanged="#tabEvents" text="Tools">

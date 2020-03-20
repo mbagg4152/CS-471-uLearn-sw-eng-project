@@ -3,12 +3,14 @@
 <?import javafx.scene.layout.AnchorPane?><?import javafx.scene.layout.VBox?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
-    xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainCont">
-  <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
-      prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-      AnchorPane.topAnchor="0.0">
-    <VBox layoutX="7.0" layoutY="7.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="80.0" prefWidth="600.0"
-        AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-        AnchorPane.topAnchor="0.0"/>
-  </AnchorPane>
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.MainCont">
+	<AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+	            prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+	            AnchorPane.rightAnchor="0.0"
+	            AnchorPane.topAnchor="0.0">
+		<VBox layoutX="7.0" layoutY="7.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="80.0"
+		      prefWidth="600.0"
+		      AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+		      AnchorPane.topAnchor="0.0"/>
+	</AnchorPane>
 </AnchorPane>
