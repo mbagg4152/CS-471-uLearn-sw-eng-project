@@ -21,6 +21,14 @@ public class ToolCont {
 	public RadioButton adminBtn = new RadioButton();
 	public RadioButton eduBtn = new RadioButton();
 	public RadioButton studentBtn = new RadioButton();
+	public TextField delClassNameLbl;
+	public Button delClassBtn;
+	public TextField delClassIdLbl;
+	public TextField txtNewClassName;
+	public TextField txtNewClassId;
+	public TextField txtNewClassEdu;
+	public TextField txtNewClassSize;
+	public Button newClassBtn;
 
 	// read in entire json object & save as var, add user to user array & write
 	// entire object back to file

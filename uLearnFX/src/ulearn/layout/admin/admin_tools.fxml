@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?><?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+    xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.ToolCont">
+  <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
+      prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+      AnchorPane.topAnchor="0.0">
+    <TabPane layoutY="-1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity"
+        minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE"
+        AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+        AnchorPane.topAnchor="0.0">
+      <Tab text="Create User">
+        <fx:include source="add_user.fxml"/>
+      </Tab>
+      <Tab text="Delete User">
+        <fx:include source="delete_user.fxml"/>
+      </Tab>
+      <Tab text="Create Class">
+        <fx:include source="add_class.fxml"/>
+      </Tab>
+      <Tab text="Delete Class">
+        <fx:include source="add_class.fxml"/>
+      </Tab>
+    </TabPane>
+  </AnchorPane>
+</AnchorPane>

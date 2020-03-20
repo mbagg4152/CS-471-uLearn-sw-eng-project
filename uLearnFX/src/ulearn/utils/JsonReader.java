@@ -11,12 +11,10 @@ import java.io.IOException;
 public class JsonReader {
 	JSONObject jObj;
 
-	public JsonReader() {
+	public JsonReader() { }
 
-	}
-
+	// defaults to user-db
 	public void readJson() {
-		//System.out.println("Working Directory = " + System.getProperty("user.dir")); // for debug purposes
 		JSONParser jsonParser = new JSONParser(); // reads json file
 		jObj = null;
 		try {
@@ -26,14 +24,42 @@ public class JsonReader {
 		setJObj(jObj);
 	}
 
+	// specify
+	public void readJson(String path) {
+		JSONParser jsonParser = new JSONParser(); // reads json file
+		jObj = null;
+		try {
+			jObj = (JSONObject) jsonParser.parse(new FileReader(path)); // try to parse json
+		} catch (IOException | ParseException e) { e.printStackTrace(); }
+		assert jObj != null;
+		setJObj(jObj);
+	}
+
+	// defaults to user-db
 	public JSONArray getJsonArr(String arrName) {
 		readJson();
 		return (JSONArray) jObj.get(arrName);
 	}
 
-	// give object type and list name to print out list
+	// specify
+	public JSONArray getJsonArr(String arrName, String path) {
+		readJson(path);
+		return (JSONArray) jObj.get(arrName);
+	}
+
+	// give object type and list name to print out list. defaults to user-db
 	public void printContents(String objType, String key, String listName) {
 		readJson();
+		doPrintContents(objType, key, listName);
+	}
+
+	// specify db file
+	public void printContents(String objType, String key, String listName, String path) {
+		readJson(path);
+		doPrintContents(objType, key, listName);
+	}
+
+	private void doPrintContents(String objType, String key, String listName) {
 		JSONArray arr = (JSONArray) jObj.get(objType);
 		for (Object outerOb : arr) {
 			JSONObject tmp = (JSONObject) outerOb;
@@ -62,8 +88,20 @@ public class JsonReader {
 	}
 
 	// pass in value that is known to get array index and using it to get another item. ex: given an id get a class name
+	// defaults to user-db
 	public String getSingleItem(String itemType, String knownKey, String knownValue, String lookFor) {
 		readJson();
+		return doGetSingleItem(itemType, knownKey, knownValue, lookFor);
+	}
+
+	// specify db file
+	public String getSingleItem(String itemType, String knownKey, String knownValue, String lookFor, String path) {
+		readJson(path);
+		return doGetSingleItem(itemType, knownKey, knownValue, lookFor);
+
+	}
+
+	public String doGetSingleItem(String itemType, String knownKey, String knownValue, String lookFor) {
 		JSONArray userArr = (JSONArray) jObj.get(itemType);
 		int index = -1, counter = 0;
 		if (userArr != null) {
@@ -83,12 +121,6 @@ public class JsonReader {
 		}
 		return null;
 	}
-
-	// to be used to get lists from something, like get list of classes from user or get list of students in classes
-	public void getItemList() {}
-
-	// either to confirm something is in a list or used to get other contents of a list, TBD
-	public void getSingleItemFromList() {}
 
 	public void setJObj(JSONObject jo) { this.jObj = jo; }
 

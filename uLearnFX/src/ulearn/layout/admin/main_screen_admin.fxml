@@ -20,7 +20,7 @@
       <fx:include source="home_admin.fxml"/>
     </Tab>
     <Tab fx:id="adminToolTab" closable="false" onSelectionChanged="#tabEvents" text="Admin Tools">
-      <fx:include source="add_user.fxml"/>
+      <fx:include source="admin_tools.fxml"/>
     </Tab>
     <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">
       <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="180.0"
