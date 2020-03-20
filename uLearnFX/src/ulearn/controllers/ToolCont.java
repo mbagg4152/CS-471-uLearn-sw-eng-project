@@ -43,17 +43,17 @@ public class ToolCont {
 		} else if (studentBtn.isSelected()) userType = "student";
 
 		JSONObject newUser = new JSONObject();
-		if (newUuid != null) newUser.put("userId", newUuid);
-		if (newName != null) newUser.put("name", newName);
+		if (newUuid != null) newUser.put(S.lUid, newUuid);
+		if (newName != null) newUser.put(S.lName, newName);
 		if (newPwd != null) newUser.put("password", newPwd);
 		if (gradDate != null) newUser.put("gradDate", gradDate);
 		newUser.put("userType", userType);
 
 		arr.add(newUser);
-		jo.put("users", arr);
+		jo.put(S.lUser, arr);
 
 		//Write JSON file
-		try (FileWriter file = new FileWriter("database.json")) {
+		try (FileWriter file = new FileWriter(S.pUserDb)) {
 			file.write(jo.toJSONString());
 			file.flush();
 		} catch (IOException e) {
