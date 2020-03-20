@@ -3,7 +3,8 @@ package ulearn.utils;
 // this is just a class to hold strings used throughout project
 public class Const {
 	// prefix p = path
-	public static final String pUserDb = "database.json";
+	public static final String pUserDb = "user-db.json";
+	public static final String pClassDb = "class-db.json";
 	public static final String pMainAll = "../layout/gen/main_screen_all.fxml";
 	public static final String pMainAdm = "../layout/admin/main_screen_admin.fxml";
 	public static final String pMainEdu = "../layout/edu/main_screen_educator.fxml";

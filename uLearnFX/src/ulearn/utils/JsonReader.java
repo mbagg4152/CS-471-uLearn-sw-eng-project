@@ -20,7 +20,7 @@ public class JsonReader {
 		JSONParser jsonParser = new JSONParser(); // reads json file
 		jObj = null;
 		try {
-			jObj = (JSONObject) jsonParser.parse(new FileReader("database.json")); // try to parse json
+			jObj = (JSONObject) jsonParser.parse(new FileReader(Const.pUserDb)); // try to parse json
 		} catch (IOException | ParseException e) { e.printStackTrace(); }
 		assert jObj != null;
 		setJObj(jObj);
@@ -38,9 +38,9 @@ public class JsonReader {
 		for (Object outerOb : arr) {
 			JSONObject tmp = (JSONObject) outerOb;
 			System.out.print("Label: " + ((String) tmp.get(key)) + " --> ");
-			if (objType.equals("users")) {
-				String type = (String) tmp.get("userType");
-				if (!type.equals("admin")) {
+			if (objType.equals(Const.lUser)) {
+				String type = (String) tmp.get(Const.lUType);
+				if (!type.equals(Const.tAdm)) {
 					System.out.print(" contents: ");
 					JSONArray jArr = (JSONArray) tmp.get(listName);
 					for (Object t : jArr) {

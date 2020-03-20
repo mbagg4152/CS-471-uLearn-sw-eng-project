@@ -1,0 +1,14 @@
+{
+  "classes": [
+    {
+      "classId": "c123", "teacher": "vineyard", "name": "class-101",
+      "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
+    }, {
+      "classId": "c124", "teacher": "vineyard", "name": "class-102",
+      "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
+    }, {
+      "classId": "c125", "teacher": "vineyard", "name": "class-105",
+      "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
+    }
+  ]
+}
