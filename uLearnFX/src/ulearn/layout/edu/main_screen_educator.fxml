@@ -13,19 +13,19 @@
       <MenuItem mnemonicParsing="false" text="About uLearn"/>
     </Menu>
   </MenuBar>
-  <TabPane fx:id="mtEdu" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0"
-      prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+  <TabPane fx:id="mtEdu" layoutY="27.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="370.0" prefWidth="600.0"
+      tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
       AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
     <Tab fx:id="homeTab" closable="false" text="uLearn Home">
       <fx:include source="../gen/home.fxml"/>
     </Tab>
-    <Tab fx:id="classTeacherTab" closable="false" text="Classes">
+    <Tab fx:id="classEduTab" closable="false" text="Classes">
       <fx:include source="class_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="gradeTeacherTab" closable="false" text="Grades">
+    <Tab fx:id="gradeEduTab" closable="false" text="Grades">
       <fx:include source="grades_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabTeacher" closable="false" text="Chat">
+    <Tab fx:id="chatTabEdu" closable="false" text="Chat">
       <fx:include source="chat_teacher.fxml"/>
     </Tab>
     <Tab fx:id="eduToolTab" closable="false" onSelectionChanged="#tabEvents" text="Tools">

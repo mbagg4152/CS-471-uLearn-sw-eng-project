@@ -5,8 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
+import javafx.scene.control.*;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.stage.Stage;
@@ -33,6 +32,17 @@ public class MainCont {
 	// google stuff
 	public WebView wvGCal = new WebView();
 	public WebView wvDrive = new WebView();
+	public Tab homeTab;
+	public Tab classEduTab;
+	public Tab gradeEduTab;
+	public Tab chatTabEdu;
+	public Tab eduToolTab;
+	public MenuItem exitEdu;
+	public Tab settingsTab;
+	public MenuItem exitStudent;
+	public Tab classStudentTab;
+	public Tab gradeStudentTab;
+	public Tab chatTabStudent;
 
 	@FXML void tabEvents(Event ev) {
 		ev.consume();

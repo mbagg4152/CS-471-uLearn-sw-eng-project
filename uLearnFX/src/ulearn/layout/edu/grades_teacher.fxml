@@ -40,7 +40,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
               </rowConstraints>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="One" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -52,7 +52,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Two" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -64,7 +64,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Three" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -76,7 +76,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Four" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -88,7 +88,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Five" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -100,7 +100,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Six" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -112,7 +112,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Seven" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -124,7 +124,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="HW1" GridPane.columnIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -136,7 +136,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -145,7 +145,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -154,7 +154,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -163,7 +163,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -172,7 +172,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -181,7 +181,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -190,7 +190,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -199,7 +199,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="HW2" GridPane.columnIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -211,7 +211,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -220,7 +220,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -229,7 +229,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -238,7 +238,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -247,7 +247,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -256,7 +256,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -265,7 +265,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -274,7 +274,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Quiz1" GridPane.columnIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -286,7 +286,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -295,7 +295,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -304,7 +304,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -313,7 +313,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Student">
                 <GridPane.margin>
                   <Insets/>
@@ -325,7 +325,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -334,7 +334,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -343,7 +343,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -352,7 +352,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -361,7 +361,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="HW3" GridPane.columnIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -373,7 +373,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -382,7 +382,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -391,7 +391,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      prefHeight="7.0" prefWidth="28.0" style="-fx-border-color: black;" text="--"
                      GridPane.columnIndex="4" GridPane.rowIndex="3">
                 <GridPane.margin>
@@ -401,7 +401,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -410,7 +410,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -419,7 +419,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -428,7 +428,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -437,7 +437,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Exam1" GridPane.columnIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -449,7 +449,7 @@
                   <Font name="System Bold" size="12.0"/>
                 </font>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -458,7 +458,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -467,7 +467,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -476,7 +476,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -485,7 +485,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -494,7 +494,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -503,7 +503,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -537,7 +537,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
               </rowConstraints>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="One" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -546,7 +546,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Two" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -555,7 +555,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Three" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -564,7 +564,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Four" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -573,7 +573,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Five" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -582,7 +582,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Six" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -591,7 +591,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Seven" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -600,7 +600,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Date1" GridPane.columnIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -609,7 +609,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -618,7 +618,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -627,7 +627,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -636,7 +636,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -645,7 +645,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -654,7 +654,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -663,7 +663,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="1" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -672,7 +672,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Date2" GridPane.columnIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -681,7 +681,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -690,7 +690,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -699,7 +699,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -708,7 +708,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -717,7 +717,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -726,7 +726,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -735,7 +735,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="2" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -744,7 +744,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Date3" GridPane.columnIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -753,7 +753,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -762,7 +762,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -771,7 +771,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -780,7 +780,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Student">
                 <GridPane.margin>
                   <Insets/>
@@ -789,7 +789,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -798,7 +798,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -807,7 +807,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -816,7 +816,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="3" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -825,7 +825,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Date4" GridPane.columnIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -834,7 +834,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -843,7 +843,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -852,7 +852,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      prefHeight="7.0" prefWidth="28.0" style="-fx-border-color: black;" text="--"
                      GridPane.columnIndex="4" GridPane.rowIndex="3">
                 <GridPane.margin>
@@ -862,7 +862,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -871,7 +871,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -880,7 +880,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -889,7 +889,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="4" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>
@@ -898,7 +898,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="Date5" GridPane.columnIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -907,7 +907,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="1">
                 <GridPane.margin>
                   <Insets/>
@@ -916,7 +916,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="2">
                 <GridPane.margin>
                   <Insets/>
@@ -925,7 +925,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="3">
                 <GridPane.margin>
                   <Insets/>
@@ -934,7 +934,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="4">
                 <GridPane.margin>
                   <Insets/>
@@ -943,7 +943,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="5">
                 <GridPane.margin>
                   <Insets/>
@@ -952,7 +952,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="6">
                 <GridPane.margin>
                   <Insets/>
@@ -961,7 +961,7 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
                 </padding>
               </Label>
-              <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+              <Label alignment="CENTER" maxHeight="1.7E308" maxWidth="1.7E308"
                      style="-fx-border-color: black;" text="--" GridPane.columnIndex="5" GridPane.rowIndex="7">
                 <GridPane.margin>
                   <Insets/>

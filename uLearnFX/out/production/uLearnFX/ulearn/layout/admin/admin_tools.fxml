@@ -21,7 +21,7 @@
         <fx:include source="add_class.fxml"/>
       </Tab>
       <Tab text="Delete Class">
-        <fx:include source="add_class.fxml"/>
+        <fx:include source="delete_class.fxml"/>
       </Tab>
     </TabPane>
   </AnchorPane>

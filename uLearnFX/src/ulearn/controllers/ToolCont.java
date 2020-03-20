@@ -29,6 +29,9 @@ public class ToolCont {
 	public TextField txtNewClassEdu;
 	public TextField txtNewClassSize;
 	public Button newClassBtn;
+	public TextField txtNewEduName;
+	public ToggleGroup group;
+	public TextField txtNewSeats;
 
 	// read in entire json object & save as var, add user to user array & write
 	// entire object back to file

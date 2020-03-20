@@ -30,7 +30,7 @@
         </rowConstraints>
         <TextField GridPane.columnIndex="1"/>
         <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-        <MenuButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Student"
+        <MenuButton maxWidth="1.7E308" mnemonicParsing="false" text="Student"
                     GridPane.columnIndex="1" GridPane.rowIndex="1">
           <items>
             <MenuItem mnemonicParsing="false" text="Name One"/>
