@@ -22,7 +22,7 @@
 			<RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES"/>
 			<RowConstraints maxHeight="122.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES"/>
 		</rowConstraints>
-		<TextField fx:id="txtNewClassName" maxWidth="1.7E308" minHeight="25.0" minWidth="-Infinity"
+		<TextField fx:id="tfNewClassName" maxWidth="1.7E308" minHeight="25.0" minWidth="-Infinity"
 		           promptText="Class Name (I.E. Software Engineering)" GridPane.rowIndex="1"
 		           GridPane.valignment="TOP">
 			<GridPane.margin>
@@ -32,7 +32,7 @@
 				<Insets left="10.0" right="10.0"/>
 			</padding>
 		</TextField>
-		<TextField fx:id="txtNewClassId" maxWidth="1.7E308" minHeight="25.0"
+		<TextField fx:id="tfNewClassId" maxWidth="1.7E308" minHeight="25.0"
 		           promptText="New Class ID (I.E. CS-203, CS-471)" GridPane.rowIndex="2"
 		           GridPane.valignment="TOP">
 			<padding>
@@ -42,7 +42,7 @@
 				<Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
 			</GridPane.margin>
 		</TextField>
-		<TextField fx:id="txtNewEduName" maxWidth="1.7E308" minHeight="25.0"
+		<TextField fx:id="tfNewEduName" maxWidth="1.7E308" minHeight="25.0"
 		           promptText="Name of Educator (I.E. Vineyard)" GridPane.rowIndex="3" GridPane.valignment="TOP">
 			<padding>
 				<Insets left="10.0" right="10.0"/>
@@ -51,7 +51,7 @@
 				<Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
 			</GridPane.margin>
 		</TextField>
-		<TextField fx:id="txtNewSeats" maxWidth="1.7E308" minHeight="25.0"
+		<TextField fx:id="tfNewSeats" maxWidth="1.7E308" minHeight="25.0"
 		           promptText="Maximum Available Seats (I.E. 25, 30)" GridPane.rowIndex="4"
 		           GridPane.valignment="TOP">
 			<padding>

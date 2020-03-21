@@ -11,27 +11,18 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class ToolCont {
-	public DatePicker newGradDate = new DatePicker();
-	public TextField txtNewPwd = new TextField();
-	public TextField txtNewLast = new TextField();
-	public TextField txtNewUuid = new TextField();
-	public TextField txtNewFirst = new TextField();
-	public Button newUserBtn = new Button();
 	public JsonReader jr = new JsonReader();
-	public RadioButton adminBtn = new RadioButton();
-	public RadioButton eduBtn = new RadioButton();
-	public RadioButton studentBtn = new RadioButton();
-	public TextField delClassNameLbl;
-	public Button delClassBtn;
-	public TextField delClassIdLbl;
-	public TextField txtNewClassName;
-	public TextField txtNewClassId;
-	public TextField txtNewClassEdu;
-	public TextField txtNewClassSize;
-	public Button newClassBtn;
-	public TextField txtNewEduName;
+	public DatePicker newGradDate = new DatePicker();
+	public TextField txtNewPwd = new TextField(), txtNewLast = new TextField(), txtNewUuid = new TextField(),
+			tfNewFirst = new TextField(), delClassNameLbl = new TextField(), delClassIdLbl = new TextField(),
+			tfNewClassName = new TextField(), tfNewClassId = new TextField(), tfNewClassEdu = new TextField(),
+			tfNewClassSize = new TextField(), tfNewEduName = new TextField(), tfNewSeats = new TextField();
+	public Button newUserBtn = new Button(), delClassBtn = new Button(), newClassBtn = new Button(), delEduBtn =
+			new Button(), delStuBtn = new Button(), delAdmBtn = new Button();
 	public ToggleGroup group;
-	public TextField txtNewSeats;
+	public RadioButton adminBtn = new RadioButton(), eduBtn = new RadioButton(), studentBtn = new RadioButton();
+	public ChoiceBox delStuBox = new ChoiceBox(), delEduBox = new ChoiceBox(), delAdmBox = new ChoiceBox(),
+			delClassBox = new ChoiceBox();
 
 	// read in entire json object & save as var, add user to user array & write
 	// entire object back to file
@@ -41,7 +32,7 @@ public class ToolCont {
 		JSONArray arr = jr.getJsonArr(lUser); // get copy of arr
 		jo.remove(lUser); // only could get copy of arr. delete arr since it will be overwritten
 		String gradDate = null;
-		String newName = txtNewFirst.getText() + " " + txtNewLast.getText();
+		String newName = tfNewFirst.getText() + " " + txtNewLast.getText();
 		String newPwd = txtNewPwd.getText();
 		String newUuid = txtNewUuid.getText();
 		String userType = tUndef;
