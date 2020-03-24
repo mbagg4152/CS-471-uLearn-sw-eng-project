@@ -3,18 +3,23 @@
   {
     "password": "1234", "name": "dummyStudent", "gpa": 1, "userType": "student",
     "gradDate": "yyyy-mm-dd", "userId": "stu", "classList": ["CS-102", "CS-203", "CS-457"],
-    "gpa": 2, "grades": [
-    {
-      "CS-457": [
-        {
-          "assignment": {
+    "grades": [
+      {
+        "CS-457": [
+          {
             "name": "Syllabus",
             "date": "Jan-16-20",
-            "grade": 80
+            "totalPoints": 1,
+            "earnedPoints": 1
+          },{
+            "name": "Assignment 1",
+            "date": "Jan-18-20",
+            "totalPoints": 100,
+            "earnedPoints": 80
           }
-        }]
-    }
-  ]
+        ]
+      }
+    ]
   }, {
     "password": "1234", "name": "dummyEdu", "userType": "educator", "userId": "edu",
     "classList": ["CS-102", "CS-203", "CS-457"]
