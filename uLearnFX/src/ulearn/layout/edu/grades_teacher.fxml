@@ -1036,6 +1036,9 @@
 						</GridPane>
 					</AnchorPane>
 				</Tab>
+				<Tab text="Add Grades">
+					<fx:include source="grade_add_dialog.fxml"/>
+				</Tab>
 			</TabPane>
 		</AnchorPane>
 	</ScrollPane>

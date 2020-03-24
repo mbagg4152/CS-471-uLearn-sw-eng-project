@@ -1,87 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?><?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
-    xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.ToolCont">
-  <GridPane hgap="10.0" prefHeight="371.0" prefWidth="600.0" vgap="10.0" AnchorPane.bottomAnchor="0.0"
-      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-    <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="389.0"/>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="142.0"/>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="69.0"/>
-    </columnConstraints>
-    <rowConstraints>
-      <RowConstraints maxHeight="173.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES"/>
-      <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES"/>
-      <RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES"/>
-      <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES"/>
-    </rowConstraints>
-    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="100.0" text="Delete Student"
-        GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP"
-        GridPane.vgrow="NEVER">
-      <GridPane.margin>
-        <Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
-      </GridPane.margin>
-      <padding>
-        <Insets bottom="8.0" left="5.0" right="5.0" top="8.0"/>
-      </padding>
-    </Button>
-    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="100.0" text="Delete Teacher"
-        GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
-      <GridPane.margin>
-        <Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
-      </GridPane.margin>
-      <padding>
-        <Insets bottom="8.0" left="5.0" right="5.0" top="8.0"/>
-      </padding>
-    </Button>
-    <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefWidth="100.0" text="Delete Admin"
-        GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
-      <GridPane.margin>
-        <Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
-      </GridPane.margin>
-      <padding>
-        <Insets bottom="8.0" left="5.0" right="5.0" top="8.0"/>
-      </padding>
-    </Button>
-    <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="1"
-        GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-      <GridPane.margin>
-        <Insets bottom="10.0" left="20.0" right="60.0" top="10.0"/>
-      </GridPane.margin>
-      <padding>
-        <Insets bottom="2.0" top="2.0"/>
-      </padding>
-    </ChoiceBox>
-    <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="2"
-        GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-      <GridPane.margin>
-        <Insets bottom="10.0" left="20.0" right="60.0" top="10.0"/>
-      </GridPane.margin>
-      <padding>
-        <Insets bottom="2.0" top="2.0"/>
-      </padding>
-    </ChoiceBox>
-    <ChoiceBox maxWidth="1.7976931348623157E308" prefWidth="200.0" GridPane.halignment="LEFT" GridPane.rowIndex="3"
-        GridPane.valignment="TOP" GridPane.vgrow="NEVER">
-      <GridPane.margin>
-        <Insets bottom="10.0" left="20.0" right="60.0" top="10.0"/>
-      </GridPane.margin>
-      <padding>
-        <Insets bottom="2.0" top="2.0"/>
-      </padding>
-    </ChoiceBox>
-    <Label alignment="TOP_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Delete User">
-      <font>
-        <Font name="Droid Sans Bold" size="24.0"/>
-      </font>
-      <GridPane.margin>
-        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
-      </GridPane.margin>
-    </Label>
-    <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-  </GridPane>
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.ToolCont">
+	<GridPane hgap="10.0" prefHeight="371.0" prefWidth="600.0" vgap="10.0" AnchorPane.bottomAnchor="0.0"
+	          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+		<columnConstraints>
+			<ColumnConstraints hgrow="SOMETIMES" maxWidth="444.0" minWidth="10.0" prefWidth="389.0"/>
+			<ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="142.0"/>
+			<ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="69.0"/>
+		</columnConstraints>
+		<rowConstraints>
+			<RowConstraints maxHeight="173.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES"/>
+			<RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES"/>
+			<RowConstraints maxHeight="166.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES"/>
+			<RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="180.0" vgrow="SOMETIMES"/>
+		</rowConstraints>
+		<Button fx:id="delStuBtn" maxWidth="1.7E308" mnemonicParsing="false" prefWidth="100.0"
+		        text="Delete Student" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1"
+		        GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+			<GridPane.margin>
+				<Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
+			</GridPane.margin>
+			<padding>
+				<Insets bottom="8.0" left="5.0" right="5.0" top="8.0"/>
+			</padding>
+		</Button>
+		<Button fx:id="delEduBtn" maxWidth="1.7E308" mnemonicParsing="false" prefWidth="100.0"
+		        text="Delete Teacher" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2"
+		        GridPane.valignment="TOP">
+			<GridPane.margin>
+				<Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
+			</GridPane.margin>
+			<padding>
+				<Insets bottom="8.0" left="5.0" right="5.0" top="8.0"/>
+			</padding>
+		</Button>
+		<Button fx:id="delAdmBtn" maxWidth="1.7E308" mnemonicParsing="false" prefWidth="100.0" text="Delete Admin"
+		        GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3"
+		        GridPane.valignment="TOP">
+			<GridPane.margin>
+				<Insets bottom="20.0" left="10.0" right="10.0" top="10.0"/>
+			</GridPane.margin>
+			<padding>
+				<Insets bottom="8.0" left="5.0" right="5.0" top="8.0"/>
+			</padding>
+		</Button>
+		<ChoiceBox fx:id="delStuBox" maxWidth="1.7E308" prefWidth="200.0" GridPane.halignment="LEFT"
+		           GridPane.rowIndex="1" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+			<GridPane.margin>
+				<Insets bottom="10.0" left="20.0" right="60.0" top="10.0"/>
+			</GridPane.margin>
+			<padding>
+				<Insets bottom="2.0" top="2.0"/>
+			</padding>
+		</ChoiceBox>
+		<ChoiceBox fx:id="delEduBox" maxWidth="1.7E308" prefWidth="200.0" GridPane.halignment="LEFT"
+		           GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+			<GridPane.margin>
+				<Insets bottom="10.0" left="20.0" right="60.0" top="10.0"/>
+			</GridPane.margin>
+			<padding>
+				<Insets bottom="2.0" top="2.0"/>
+			</padding>
+		</ChoiceBox>
+		<ChoiceBox fx:id="delAdmBox" maxWidth="1.7E308" prefWidth="200.0" GridPane.halignment="LEFT"
+		           GridPane.rowIndex="3" GridPane.valignment="TOP" GridPane.vgrow="NEVER">
+			<GridPane.margin>
+				<Insets bottom="10.0" left="20.0" right="60.0" top="10.0"/>
+			</GridPane.margin>
+			<padding>
+				<Insets bottom="2.0" top="2.0"/>
+			</padding>
+		</ChoiceBox>
+		<Label alignment="TOP_LEFT" maxHeight="1.7E308" maxWidth="1.7E308" text="Delete User">
+			<font>
+				<Font name="Droid Sans Bold" size="24.0"/>
+			</font>
+			<GridPane.margin>
+				<Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+			</GridPane.margin>
+		</Label>
+		<padding>
+			<Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+		</padding>
+	</GridPane>
 </AnchorPane>

@@ -1,39 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Accordion?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TitledPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Text?>
-
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.ChatStudentCont">
-  <AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="400.0"
-              prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-              AnchorPane.topAnchor="0.0">
-    <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="2.0"
-             AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
-             AnchorPane.topAnchor="0.0">
-      <Tab closable="false" text="Class One">
-        <fx:include source="classpage_student.fxml"/>
-
-      </Tab>
-      <Tab closable="false" text="Class Two">
-        <fx:include source="classpage_student.fxml"/>
-      </Tab>
-      <Tab closable="false" text="Class Three">
-        <fx:include source="classpage_student.fxml"/>
-      </Tab>
-      <Tab closable="false" text="Class Four">
-        <fx:include source="classpage_student.fxml"/>
-      </Tab>
-    </TabPane>
-  </AnchorPane>
+	<AnchorPane maxHeight="Infinity" maxWidth="Infinity" minHeight="0.0" minWidth="0.0" prefHeight="400.0"
+	            prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+	            AnchorPane.rightAnchor="0.0"
+	            AnchorPane.topAnchor="0.0">
+		<TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="2.0"
+		         AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+		         AnchorPane.topAnchor="0.0">
+			<Tab closable="false" text="Class One">
+				<fx:include source="classpage_student.fxml"/>
+			
+			</Tab>
+			<Tab closable="false" text="Class Two">
+				<fx:include source="classpage_student.fxml"/>
+			</Tab>
+			<Tab closable="false" text="Class Three">
+				<fx:include source="classpage_student.fxml"/>
+			</Tab>
+			<Tab closable="false" text="Class Four">
+				<fx:include source="classpage_student.fxml"/>
+			</Tab>
+		</TabPane>
+	</AnchorPane>
 
 </AnchorPane>

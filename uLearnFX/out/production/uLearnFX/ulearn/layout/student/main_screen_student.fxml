@@ -7,7 +7,7 @@
   <MenuBar layoutY="2.0" maxHeight="Infinity" maxWidth="Infinity" prefHeight="25.0" prefWidth="600.0"
       AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
     <Menu mnemonicParsing="false" text="Menu">
-      <MenuItem mnemonicParsing="false" fx:id="exitStudent" onAction="#logOut" text="Sign out"/>
+      <MenuItem mnemonicParsing="false" fx:id="stuExit" onAction="#logOut" text="Sign out"/>
     </Menu>
     <Menu mnemonicParsing="false" text="Help">
       <MenuItem mnemonicParsing="false" text="About uLearn"/>
@@ -19,13 +19,13 @@
     <Tab fx:id="homeTab" closable="false" text="uLearn Home">
       <fx:include source="../gen/home.fxml"/>
     </Tab>
-    <Tab fx:id="classStudentTab" closable="false" text="Classes">
+    <Tab fx:id="stuClassTab" closable="false" text="Classes">
       <fx:include source="class_student.fxml"/>
     </Tab>
-    <Tab fx:id="gradeStudentTab" closable="false" text="Grades">
+    <Tab fx:id="stuGradeTab" closable="false" text="Grades">
       <fx:include source="grades_student.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabStudent" closable="false" text="Chat">
+    <Tab fx:id="stuChatTab" closable="false" text="Chat">
       <fx:include source="chat_student.fxml"/>
     </Tab>
     <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">

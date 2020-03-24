@@ -19,22 +19,22 @@
     <Tab fx:id="homeTab" closable="false" text="uLearn Home">
       <fx:include source="home.fxml"/>
     </Tab>
-    <Tab fx:id="classStudentTab" closable="false" text="Classes [Student]">
+    <Tab fx:id="stuClassTab" closable="false" text="Classes [Student]">
       <fx:include source="../student/class_student.fxml"/>
     </Tab>
-    <Tab fx:id="classTeacherTab" closable="false" text="Classes [Educator]">
+    <Tab fx:id="classEduTab" closable="false" text="Classes [Educator]">
       <fx:include source="../edu/class_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="gradeStudentTab" closable="false" text="Grades [Student]">
+    <Tab fx:id="stuGradeTab" closable="false" text="Grades [Student]">
       <fx:include source="../student/grades_student.fxml"/>
     </Tab>
-    <Tab fx:id="gradeTeacherTab" closable="false" text="Grades [Educator]">
+    <Tab fx:id="eduGradeTab" closable="false" text="Grades [Educator]">
       <fx:include source="../edu/grades_teacher.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabStudent" closable="false" text="Chat [Student]">
+    <Tab fx:id="stuChatTab" closable="false" text="Chat [Student]">
       <fx:include source="../student/chat_student.fxml"/>
     </Tab>
-    <Tab fx:id="chatTabTeacher" closable="false" text="Chat [Educator]">
+    <Tab fx:id="eduChatTab" closable="false" text="Chat [Educator]">
       <fx:include source="../edu/chat_teacher.fxml"/>
     </Tab>
     <Tab fx:id="calTab" closable="false" onSelectionChanged="#tabEvents" text="Calendar">
