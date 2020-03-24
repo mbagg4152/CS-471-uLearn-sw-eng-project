@@ -41,7 +41,7 @@ NOTE: Unfortunately, due to some issues, this project was not exported to a .jar
 <a name="install"></a>
 ## 4. Installation
 
-* This application is currently in the prototype stage. Make sure all project files are in the same folder, 
+* This application is currently in the implementation stage. Make sure all project files are in the same folder, 
 
 <a name="built"></a>
 ## 5. Built With
@@ -62,4 +62,4 @@ NOTE: Unfortunately, due to some issues, this project was not exported to a .jar
 <a name="status"></a>
 ## 7. Project Status
 
-* Currently in prototype stage. 
+* Currently in implementation stage. 
