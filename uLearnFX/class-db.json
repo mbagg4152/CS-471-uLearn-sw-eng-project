@@ -9,6 +9,6 @@
     }, {
       "classId": "c125", "teacher": "vineyard", "name": "class-105",
       "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
-    }
+    }, {"classId": "classid", "teacher": "", "name": "classname", "seats": "45"}
   ]
 }

@@ -18,6 +18,12 @@ public class Const {
 	public static final String lPwd = "password";
 	public static final String lGrad = "gradDate";
 	public static final String lUType = "userType";
+	public static final String lClass = "classes";
+	public static final String lClassId = "classId";
+	public static final String lTeach = "teacher";
+	public static final String lClassName = "name";
+	public static final String lStudents = "students";
+	public static final String lSeats = "seats";
 
 	// prefix t = type
 	public static final String tAdm = "admin";

@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ulearn.controllers.GradesTeacherCont">
-	<TitledPane animated="false" layoutX="6.0" text="New Grade" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+	<TitledPane animated="false" layoutX="6.0" prefHeight="400.0" prefWidth="600.0" text="New Grade" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
 		<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
 			<GridPane layoutX="100.0" layoutY="37.0" prefWidth="379.0">
 				<columnConstraints>

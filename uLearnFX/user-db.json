@@ -1,31 +1,22 @@
 {
   "users": [
-  {
-    "password": "1234", "name": "dummyStudent", "gpa": 1, "userType": "student",
-    "gradDate": "yyyy-mm-dd", "userId": "stu", "classList": ["CS-102", "CS-203", "CS-457"],
-    "grades": [
+    {
+      "password": "1234", "name": "dummyStudent", "gpa": 1, "userType": "student",
+      "gradDate": "yyyy-mm-dd", "grades": [
       {
         "CS-457": [
-          {
-            "name": "Syllabus",
-            "date": "Jan-16-20",
-            "totalPoints": 1,
-            "earnedPoints": 1
-          },{
-            "name": "Assignment 1",
-            "date": "Jan-18-20",
-            "totalPoints": 100,
-            "earnedPoints": 80
-          }
+          {"date": "Jan-16-20", "name": "Syllabus", "totalPoints": 1, "earnedPoints": 1},
+          {"date": "Jan-18-20", "name": "Assignment 1", "totalPoints": 100, "earnedPoints": 80}
         ]
       }
-    ]
-  }, {
-    "password": "1234", "name": "dummyEdu", "userType": "educator", "userId": "edu",
-    "classList": ["CS-102", "CS-203", "CS-457"]
-  }, {
-    "password": "1234", "name": "dummyAdmin", "userType": "admin", "userId": "adm",
-    "classList": ["CS-102", "CS-203", "CS-457"]
-  }
-]
+    ], "userId": "stu", "classList": ["CS-102", "CS-203", "CS-457"]
+    }, {
+      "password": "1234", "name": "dummyEdu", "userType": "educator", "userId": "edu",
+      "classList": ["CS-102", "CS-203", "CS-457"]
+    }, {
+      "password": "1234", "name": "dummyAdmin", "userType": "admin", "userId": "adm",
+      "classList": ["CS-102", "CS-203", "CS-457"]
+    }, {"password": "", "name": " ", "userType": "undefined", "userId": ""},
+    {"password": "", "name": " ", "userType": "undefined", "userId": ""}
+  ]
 }

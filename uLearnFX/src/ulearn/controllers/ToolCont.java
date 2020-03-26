@@ -64,4 +64,36 @@ public class ToolCont {
 		}
 	}
 
+	public void makeNewClass(ActionEvent event) {
+		jr.readJson(pClassDb);
+		JSONObject jo = jr.getJObj();
+
+		JSONArray arr = jr.getJsonArr(lClass,pClassDb); // get copy of arr
+
+		jo.remove(lClass); // only could get copy of arr. delete arr since it will be overwritten
+
+		String newName = tfNewClassName.getText();
+		String newSeats = tfNewSeats.getText();
+		String newClassId = tfNewClassId.getText();
+		String newEdu = tfNewClassEdu.getText();
+
+		JSONObject newClass = new JSONObject();
+
+		if (newClassId != null) newClass.put(lClassId, newClassId);
+		if (newName != null) newClass.put(lName, newName);
+		if (newSeats != null) newClass.put(lSeats, newSeats);
+		if (newEdu != null) newClass.put(lTeach, newEdu);
+
+		arr.add(newClass);
+		jo.put(lClass, arr);
+
+		//Write JSON file
+		try (FileWriter file = new FileWriter(pClassDb)) {
+			file.write(jo.toJSONString());
+			file.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 }
