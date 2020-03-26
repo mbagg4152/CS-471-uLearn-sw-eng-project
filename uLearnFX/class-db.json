@@ -1,14 +1,18 @@
 {
   "classes": [
     {
-      "classId": "c123", "teacher": "vineyard", "name": "class-101",
-      "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
-    }, {
-      "classId": "c124", "teacher": "vineyard", "name": "class-102",
-      "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
-    }, {
-      "classId": "c125", "teacher": "vineyard", "name": "class-105",
-      "students": ["44123", "44124", "44125", "44126", "44127", "44128"]
-    }, {"classId": "classid", "teacher": "", "name": "classname", "seats": "45"}
+      "classId": "c123","educator": "vineyard", "name": "class-101",
+      "students": [ "44123", "44124", "44125", "44126", "44127", "44128" ]
+    },
+    {
+      "classId": "c124","educator": "vineyard", "name": "class-102",
+      "students": [ "44123", "44124", "44125", "44126", "44127", "44128" ]
+    },
+    {
+      "classId": "c125","educator": "vineyard", "name": "class-105",
+      "students": [ "44123", "44124", "44125", "44126", "44127", "44128" ]
+    },
+    { "classId": "some-id","educator": "some guy", "name": "some-class", "seats": "45" },
+    { "classId": "name","educator": "professor", "name": "class-id", "seats": "78" }
   ]
 }

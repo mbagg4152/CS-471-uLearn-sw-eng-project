@@ -4,6 +4,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import static ulearn.utils.Const.*;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -18,7 +19,7 @@ public class JsonReader {
 		JSONParser jsonParser = new JSONParser(); // reads json file
 		jObj = null;
 		try {
-			jObj = (JSONObject) jsonParser.parse(new FileReader(Const.pUserDb)); // try to parse json
+			jObj = (JSONObject) jsonParser.parse(new FileReader(pj_user_db)); // try to parse json
 		} catch (IOException | ParseException e) { e.printStackTrace(); }
 		assert jObj != null;
 		setJObj(jObj);
@@ -64,9 +65,9 @@ public class JsonReader {
 		for (Object outerOb : arr) {
 			JSONObject tmp = (JSONObject) outerOb;
 			System.out.print("Label: " + ((String) tmp.get(key)) + " --> ");
-			if (objType.equals(Const.lUser)) {
-				String type = (String) tmp.get(Const.lUType);
-				if (!type.equals(Const.tAdm)) {
+			if (objType.equals(uat_users)) {
+				String type = (String) tmp.get(ul_usr_type);
+				if (!type.equals(t_adm)) {
 					System.out.print(" contents: ");
 					JSONArray jArr = (JSONArray) tmp.get(listName);
 					for (Object t : jArr) {

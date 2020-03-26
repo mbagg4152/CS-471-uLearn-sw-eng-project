@@ -1,22 +1,38 @@
 {
   "users": [
+    { "name": "Stewart Dent", "gradDate": "2022-03-04", "password": "pass", "userId": "stu_00", "userType": "student" },
+    { "name": "June Yor", "gradDate": "2022-03-04", "password": "pass", "userId": "stu_01", "userType": "student" },
+    { "name": "Puu Pille", "gradDate": "2022-03-04", "password": "pass", "userId": "stu_02", "userType": "student" },
+
+    { "name": "Man Aggerré", "password": "1234", "userId": "adm_00", "userType": "admin" },
+    { "name": "Ad Minn", "password": "1234", "userId": "adm_01", "userType": "admin" },
+    { "name": "The Captain", "password": "1234", "userId": "adm_02", "userType": "admin" },
+
+    { "name": "Teah Cheré", "password": "1234", "userId": "edu_00", "userType": "educator" },
+    { "name": "Dock Tore", "password": "1234", "userId": "edu_01", "userType": "educator" },
+    { "name": "Proff Esseré", "password": "1234", "userId": "edu_02", "userType": "educator" },
+
+
     {
-      "password": "1234", "name": "dummyStudent", "gpa": 1, "userType": "student",
-      "gradDate": "yyyy-mm-dd", "grades": [
-      {
-        "CS-457": [
-          {"date": "Jan-16-20", "name": "Syllabus", "totalPoints": 1, "earnedPoints": 1},
-          {"date": "Jan-18-20", "name": "Assignment 1", "totalPoints": 100, "earnedPoints": 80}
-        ]
-      }
-    ], "userId": "stu", "classList": ["CS-102", "CS-203", "CS-457"]
-    }, {
-      "password": "1234", "name": "dummyEdu", "userType": "educator", "userId": "edu",
-      "classList": ["CS-102", "CS-203", "CS-457"]
-    }, {
-      "password": "1234", "name": "dummyAdmin", "userType": "admin", "userId": "adm",
-      "classList": ["CS-102", "CS-203", "CS-457"]
-    }, {"password": "", "name": " ", "userType": "undefined", "userId": ""},
-    {"password": "", "name": " ", "userType": "undefined", "userId": ""}
+      "name": "Testing Student", "password": "1234", "userId": "stu", "userType": "student", "gpa": 1,
+      "gradDate": "yyyy-mm-dd",
+      "classList": [ "CS-102", "CS-203", "CS-457" ],
+      "grades": [
+        {
+          "CS-457": [
+            { "date": "Jan-16-20", "earnedPoints": 1, "name": "Syllabus", "totalPoints": 1 },
+            { "date": "Jan-18-20", "earnedPoints": 80, "name": "Assignment 1", "totalPoints": 100 }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Testing Edu", "password": "1234", "userId": "edu", "userType": "educator",
+      "classList": [ "CS-102", "CS-203", "CS-457" ]
+    },
+    {
+      "name": "Testing Admin", "password": "1234", "userId": "adm", "userType": "admin",
+      "classList": [ "CS-102", "CS-203", "CS-457" ]
+    }
   ]
 }

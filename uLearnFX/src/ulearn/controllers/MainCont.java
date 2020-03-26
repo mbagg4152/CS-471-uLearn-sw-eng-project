@@ -58,13 +58,13 @@ public class MainCont {
 
 	void gCalendar() {
 		WebEngine wEngine = wvGCal.getEngine();
-		wEngine.load(urlCalendar);
+		wEngine.load(url_cal);
 		wvGCal.setZoom(0.8);
 	}
 
 	void gDrive() {
 		WebEngine we = wvDrive.getEngine();
-		we.load(urlDrive);
+		we.load(url_drive);
 		wvDrive.setZoom(0.8);
 	}
 
@@ -79,7 +79,7 @@ public class MainCont {
 		} else if (mtAll.isFocused()) {
 			current = mtAll.getScene().getWindow();
 		}
-		backToLogin(pLogin, current, LOGIN_WD, LOGIN_HT);
+		backToLogin(px_login, current, LOGIN_WD, LOGIN_HT);
 
 	}
 

@@ -16,9 +16,9 @@ import javax.swing.*;
 import java.io.IOException;
 
 public class InitCont {
-	final String T_STU = tStu;
-	final String T_ADM = tAdm;
-	final String T_EDU = tEdu;
+	final String T_STU = t_stu;
+	final String T_ADM = t_adm;
+	final String T_EDU = t_edu;
 
 	// initial width & height of windows
 	final int INIT_WD = 800;
@@ -63,24 +63,24 @@ public class InitCont {
 		// Compare pass against username pass
 		JsonReader database = new JsonReader();
 		database.readJson();
-		return password.equals(database.getSingleItem(lUser, lUid, username, lPwd));
+		return password.equals(database.getSingleItem(uat_users, ul_uid, username, ul_pwd));
 	}
 
 	String determineLayout(String userId) {
 		JsonReader database = new JsonReader();
-		String userType = database.getSingleItem(lUser, lUid, userId, lUType);
+		String userType = database.getSingleItem(uat_users, ul_uid, userId, ul_usr_type);
 		switch (userType) {
 			case T_ADM:
-				layoutPath = pMainAdm;
+				layoutPath = px_main_adm;
 				break;
 			case T_EDU:
-				layoutPath = pMainEdu;
+				layoutPath = px_main_edu;
 				break;
 			case T_STU:
-				layoutPath = pMainStu;
+				layoutPath = px_main_stu;
 				break;
 			default:
-				layoutPath = pMainAll;
+				layoutPath = px_main_all;
 		}
 		return layoutPath;
 
