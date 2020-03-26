@@ -94,8 +94,8 @@ public class ToolCont {
 				newEdu = tfNewEduName.getText();
 
 		JSONObject newClass = new JSONObject();
-		if (isValid(newSeats) && (newSeats != null)) newClass.put(cl_seats, newSeats);
 		if (isValid(newEdu) && (newEdu != null)) newClass.put(cl_edu, newEdu);
+		if (isValid(newSeats) && (newSeats != null)) newClass.put(cl_seats, newSeats);
 		if (isValid(newName) && (newName != null)) newClass.put(l_name, newName);
 		if (isValid(newClassId) && (newClassId != null)) newClass.put(cl_cid, newClassId);
 
@@ -164,10 +164,10 @@ public class ToolCont {
 
 	public Boolean allBad(String[] arr) {
 		for (String str : arr) {
-			if (!isValid(str)) return false;
+			if (!isValid(str)) return true;
 		}
 
-		return true;
+		return false;
 	}
 
 	public void getAdmins(ActionEvent event) {
